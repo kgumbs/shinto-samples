@@ -1,8 +1,8 @@
 {
-  "name": "continuous-integration",
+  "name": "shinto",
   "version": "0.1.0",
   "bin": {
-    "continuous-integration": "bin/continuous-integration.js"
+    "shinto": "bin/shinto.js"
   },
   "scripts": {
     "build": "tsc",
@@ -19,6 +19,6 @@
     "aws-cdk-lib": "2.66.1",
     "constructs": "10.0.5",
     "source-map-support": "^0.5.21",
-    "@mrwconsulting/cicd": "^0.0.56"
+    "@mrwconsulting/shinto": "^0.0.2"
   }
 }

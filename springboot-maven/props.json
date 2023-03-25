@@ -16,7 +16,7 @@
     "git": {
       "owner": "mrwconsulting",
       "branch": "main",
-      "repository": "cicd-samples",
+      "repository": "shinto-samples",
       "codeStarId": "82b494af-d79b-4e23-8529-55de95e15428"
     },
     "buildSpec": {
