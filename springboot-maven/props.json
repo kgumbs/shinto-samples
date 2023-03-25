@@ -1,0 +1,26 @@
+{
+    "metadata": {
+      "PROJECT_WORKSPACE": "workspace",
+      "PIPELINE_WORKSPACE": "springboot-maven",
+      "PLUGGABLE_ENABLED": "false",
+      "DEBUG": "true"
+    },
+    "label": {
+      "customer": "mrwconsulting",
+      "project": "springboot-maven"
+    },
+    "controlHub": {
+      "account": "570602336658",
+      "region": "us-east-1"
+    },
+    "git": {
+      "owner": "mrwconsulting",
+      "branch": "main",
+      "repository": "cicd-samples",
+      "codeStarId": "82b494af-d79b-4e23-8529-55de95e15428"
+    },
+    "buildSpec": {
+      "type": "JAVA",
+      "packageManager": "MAVEN"
+    }
+}

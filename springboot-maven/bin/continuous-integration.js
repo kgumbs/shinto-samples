@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const fs = require("fs");
+const cicd_1 = require("@mrwconsulting/cicd");
+require("source-map-support/register");
+if (fs.existsSync('./props.json')) {
+    let props = JSON.parse(fs.readFileSync('./props.json', 'utf-8'));
+    let ci = new cicd_1.ContinuousIntegration(props);
+    ci.synth();
+}
+else {
+    console.log('Missing properties file...');
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29udGludW91cy1pbnRlZ3JhdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImNvbnRpbnVvdXMtaW50ZWdyYXRpb24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQ0EseUJBQXdCO0FBQ3hCLDhDQUE0RDtBQUM1RCx1Q0FBcUM7QUFFckMsSUFBSSxFQUFFLENBQUMsVUFBVSxDQUFDLGNBQWMsQ0FBQyxFQUFFO0lBQy9CLElBQUksS0FBSyxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsRUFBRSxDQUFDLFlBQVksQ0FBQyxjQUFjLEVBQUUsT0FBTyxDQUFDLENBQUMsQ0FBQTtJQUNoRSxJQUFJLEVBQUUsR0FBRyxJQUFJLDRCQUFxQixDQUFDLEtBQUssQ0FBQyxDQUFBO0lBQ3pDLEVBQUUsQ0FBQyxLQUFLLEVBQUUsQ0FBQTtDQUNiO0tBQU07SUFDSCxPQUFPLENBQUMsR0FBRyxDQUFDLDRCQUE0QixDQUFDLENBQUE7Q0FDNUMiLCJzb3VyY2VzQ29udGVudCI6WyIjIS91c3IvYmluL2VudiBub2RlXHJcbmltcG9ydCAqIGFzIGZzIGZyb20gJ2ZzJ1xyXG5pbXBvcnQgeyBDb250aW51b3VzSW50ZWdyYXRpb24gfSBmcm9tICdAbXJ3Y29uc3VsdGluZy9jaWNkJztcclxuaW1wb3J0ICdzb3VyY2UtbWFwLXN1cHBvcnQvcmVnaXN0ZXInO1xyXG5cclxuaWYgKGZzLmV4aXN0c1N5bmMoJy4vcHJvcHMuanNvbicpKSB7XHJcbiAgICBsZXQgcHJvcHMgPSBKU09OLnBhcnNlKGZzLnJlYWRGaWxlU3luYygnLi9wcm9wcy5qc29uJywgJ3V0Zi04JykpXHJcbiAgICBsZXQgY2kgPSBuZXcgQ29udGludW91c0ludGVncmF0aW9uKHByb3BzKVxyXG4gICAgY2kuc3ludGgoKVxyXG59IGVsc2Uge1xyXG4gICAgY29uc29sZS5sb2coJ01pc3NpbmcgcHJvcGVydGllcyBmaWxlLi4uJylcclxufVxyXG4iXX0=
