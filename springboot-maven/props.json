@@ -9,10 +9,6 @@
       "customer": "mrwconsulting",
       "project": "springboot-maven"
     },
-    "controlHub": {
-      "account": "570602336658",
-      "region": "us-east-1"
-    },
     "git": {
       "owner": "mrwconsulting",
       "branch": "main",
