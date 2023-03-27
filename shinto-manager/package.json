@@ -26,6 +26,6 @@
     "aws-cdk-lib": "2.70.0",
     "constructs": "^10.0.0",
     "source-map-support": "^0.5.21",
-    "@mrwconsulting/shinto-api": "0.0.0"
+    "@mrwconsulting/shinto-api": "0.0.21"
   }
 }
