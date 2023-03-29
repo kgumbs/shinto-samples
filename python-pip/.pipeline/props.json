@@ -1,0 +1,28 @@
+{
+    "metadata": {
+        "PLUGGABLE_BETA": "false",
+        "PLUGGABLE_ENABLED": "true",
+        "PIPELINE_WORKSPACE": "continuous-integration/python/calculator"
+    },
+    "tags": {
+        "customer": "devsecops",
+        "project": "python-calculator"
+    },
+    "controlHub": {
+        "account": "808570113109",
+        "region": "us-east-1"
+    },
+    "github": {
+        "owner": "Innersource",
+        "branch": "bcm-ci-sample",
+        "repository": "awscloud-devsecops-samples",
+        "codeStarId": "fc456d68-016b-4f77-b2a3-bf9faad49112",
+        "triggerOnPush": true,
+        "codeBuildCloneOutput": true
+    },
+    "artifactory": true,
+    "buildSpec": {
+        "type": "PYTHON",
+        "packageManager": "PIP"
+    }
+}
