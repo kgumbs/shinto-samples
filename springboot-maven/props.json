@@ -1,7 +1,7 @@
 {
     "metadata": {
+      "SHINTO_PIPELINE": "springboot-maven",
       "PROJECT_WORKSPACE": "workspace",
-      "PIPELINE_WORKSPACE": "springboot-maven",
       "PLUGGABLE_ENABLED": "false",
       "DEBUG": "true"
     },
