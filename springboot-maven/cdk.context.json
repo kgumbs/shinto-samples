@@ -31,5 +31,36 @@
       }
     ]
   },
-  "ssm:account=570602336658:parameterName=/mrwconsulting/codepipeline/vpc/id:region=us-east-1": "vpc-02190165902943bca"
+  "ssm:account=570602336658:parameterName=/mrwconsulting/codepipeline/vpc/id:region=us-east-1": "vpc-02190165902943bca",
+  "vpc-provider:account=570602336658:filter.vpc-id=vpc-0aba86ddea3045061:region=us-east-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-0aba86ddea3045061",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0272f3e8439e808b0",
+            "cidr": "10.0.128.0/20",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-0e59e11414e68c4a2"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0727ad80c6b09218b",
+            "cidr": "10.0.0.0/20",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-024bb15ffcc45311a"
+          }
+        ]
+      }
+    ]
+  }
 }
