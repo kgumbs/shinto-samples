@@ -1,37 +1,4 @@
 {
-  "ssm:account=570602336658:parameterName=/sbd/vpc/VpcId:region=us-east-1": "vpc-02190165902943bca",
-  "vpc-provider:account=570602336658:filter.vpc-id=vpc-02190165902943bca:region=us-east-1:returnAsymmetricSubnets=true": {
-    "vpcId": "vpc-02190165902943bca",
-    "vpcCidrBlock": "10.0.0.0/16",
-    "availabilityZones": [],
-    "subnetGroups": [
-      {
-        "name": "Private",
-        "type": "Private",
-        "subnets": [
-          {
-            "subnetId": "subnet-0a903fdf768e55442",
-            "cidr": "10.0.128.0/20",
-            "availabilityZone": "us-east-1a",
-            "routeTableId": "rtb-039f3205cb89e9eb5"
-          }
-        ]
-      },
-      {
-        "name": "Public",
-        "type": "Public",
-        "subnets": [
-          {
-            "subnetId": "subnet-0aef1a45294ed0834",
-            "cidr": "10.0.0.0/20",
-            "availabilityZone": "us-east-1a",
-            "routeTableId": "rtb-0791a346e26fb887e"
-          }
-        ]
-      }
-    ]
-  },
-  "ssm:account=570602336658:parameterName=/mrwconsulting/codepipeline/vpc/id:region=us-east-1": "vpc-02190165902943bca",
   "vpc-provider:account=570602336658:filter.vpc-id=vpc-0aba86ddea3045061:region=us-east-1:returnAsymmetricSubnets=true": {
     "vpcId": "vpc-0aba86ddea3045061",
     "vpcCidrBlock": "10.0.0.0/16",

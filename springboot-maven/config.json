@@ -1,0 +1,15 @@
+{
+  "region": "us-east-1",
+  "account": "570602336658",
+  "vpcId": "vpc-0aba86ddea3045061",
+  "subnetType": "Private",
+  "computeType": "SMALL",
+  "image": {
+    "repository": "shinto",
+    "tagOrDigest": "1.0.0"
+  },
+  "synth": {
+    "selfMutation": true,
+    "crossAccountKeys": true
+  }
+}
