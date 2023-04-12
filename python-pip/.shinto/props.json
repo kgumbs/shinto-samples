@@ -14,7 +14,7 @@
       "codeStarId": "cab2b6db-7afd-4d9f-9797-a5429ca8eaf5"
     },
     "buildSpec": {
-      "type": "JAVA",
-      "packageManager": "MAVEN"
+      "type": "PYTHON",
+      "packageManager": "PIP"
     }
 }
