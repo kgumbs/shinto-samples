@@ -1,0 +1,20 @@
+{
+    "metadata": {
+      "SHINTO_PIPELINE": "springboot-gradle",
+      "DEBUG": "true"
+    },
+    "label": {
+      "customer": "mrwconsulting",
+      "project": "springboot-gradle"
+    },
+    "git": {
+      "owner": "mrwconsulting",
+      "branch": "main",
+      "repository": "shinto-samples",
+      "codeStarId": "cab2b6db-7afd-4d9f-9797-a5429ca8eaf5"
+    },
+    "buildSpec": {
+      "type": "JAVA",
+      "packageManager": "GRADLE"
+    }
+}
