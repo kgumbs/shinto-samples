@@ -1,4 +1,7 @@
 *.lock
 *-lock.*
 .DS_Store
+**/dist
 **/target
+**/.venv
+**/.pytest_cache
