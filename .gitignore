@@ -2,3 +2,5 @@
 *-lock.*
 .DS_Store
 **/target
+.gradle
+build

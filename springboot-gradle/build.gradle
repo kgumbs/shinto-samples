@@ -10,6 +10,7 @@ buildscript {
     }
 }
 
+
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 
@@ -35,6 +36,7 @@ configurations {
     integrationTestCompile.extendsFrom testCompile
     integrationTestRuntime.extendsFrom testRuntime
 }
+
 
 task itest(type: Test) {
     testClassesDir = sourceSets.integrationTest.output.classesDir
