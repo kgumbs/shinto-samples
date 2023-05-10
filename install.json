@@ -13,11 +13,8 @@
       "tagOrDigest": "1.0.0"
     },
     "synth": {
-      "crossAccountKeys": true,
-      "selfMutate": {
-        "selfMutation": true,
-        "subnetType": "Private"
-      }
+      "selfMutation": true,
+      "crossAccountKeys": true
     }
   }
 }
