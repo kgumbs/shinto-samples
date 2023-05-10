@@ -1,21 +1,23 @@
 {
-    "npmrc": {
-      "token": "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",
-      "scope": "@mrwconsulting",
-      "registry": "npm.pkg.github.com"
+  "npmrc": {
+    "token": "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",
+    "scope": "@mrwconsulting",
+    "registry": "npm.pkg.github.com"
+  },
+  "config": {
+    "vpcId": "vpc-0aba86ddea3045061",
+    "subnetType": "Private",
+    "computeType": "BUILD_GENERAL1_SMALL",
+    "image": {
+      "repository": "shinto",
+      "tagOrDigest": "1.0.0"
     },
-    "config": {
-      "vpcId": "vpc-0aba86ddea3045061",
-      "subnetType": "Private",
-      "computeType": "BUILD_GENERAL1_SMALL",
-      "image": {
-        "repository": "shinto",
-        "tagOrDigest": "1.0.0"
-      },
-      "synth": {
+    "synth": {
+      "crossAccountKeys": true,
+      "selfMutate": {
         "selfMutation": true,
-        "crossAccountKeys": true,
-        "subnetType": "Public"
+        "subnetType": "Private"
       }
     }
   }
+}
