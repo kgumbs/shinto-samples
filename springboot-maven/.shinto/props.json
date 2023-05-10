@@ -1,7 +1,7 @@
 {
     "metadata": {
       "SHINTO_PIPELINE": "springboot-maven",
-      "BUILD_OUTPUT": "true",
+      "BUILD_OUTPUT": "false",
       "BUILD_OUTPUT_DESTINATION": "target"
     },
     "label": {
