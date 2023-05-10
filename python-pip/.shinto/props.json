@@ -1,6 +1,7 @@
 {
     "metadata": {
       "SHINTO_PIPELINE": "python-pip",
+      "DEBUG": "true",
       "BUILD_OUTPUT": "false",
       "BUILD_OUTPUT_DESTINATION": "dist"
     },
