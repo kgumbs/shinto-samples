@@ -1,6 +1,8 @@
 {
     "metadata": {
-      "SHINTO_PIPELINE": "springboot-maven"
+      "SHINTO_PIPELINE": "springboot-maven",
+      "BUILD_OUTPUT": "true",
+      "BUILD_OUTPUT_DESTINATION": "target"
     },
     "label": {
       "customer": "mrwconsulting",

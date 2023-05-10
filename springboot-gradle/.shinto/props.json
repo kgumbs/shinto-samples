@@ -1,6 +1,7 @@
 {
     "metadata": {
       "SHINTO_PIPELINE": "springboot-gradle",
+      "BUILD_OUTPUT": "false",
       "BUILD_OUTPUT_DESTINATION": "build"
     },
     "label": {
