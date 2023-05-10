@@ -1,6 +1,8 @@
 {
     "metadata": {
-      "SHINTO_PIPELINE": "python-pip"
+      "SHINTO_PIPELINE": "python-pip",
+      "BUILD_OUTPUT": "false",
+      "BUILD_OUTPUT_DESTINATION": "dist"
     },
     "label": {
       "customer": "mrwconsulting",
