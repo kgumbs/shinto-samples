@@ -14,7 +14,8 @@
       },
       "synth": {
         "selfMutation": true,
-        "crossAccountKeys": true
+        "crossAccountKeys": true,
+        "subnetType": "Public"
       }
     }
   }
