@@ -1,6 +1,7 @@
 {
     "metadata": {
-      "SHINTO_PIPELINE": "springboot-gradle"
+      "SHINTO_PIPELINE": "springboot-gradle",
+      "BUILD_OUTPUT_DESTINATION": "build"
     },
     "label": {
       "customer": "mrwconsulting",
