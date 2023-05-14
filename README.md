@@ -1,5 +1,9 @@
 **OVERVIEW:**
 
+CDK CICD Pipeline - reference implementation for self-service AWS CodePipeline provisioning. 
+Various development teams submit a property file to the service to create a CDK Pipeline. 
+This CDK Pipeline with mutate (self-configure) is based on different attributes set within a property file. 
+
 --to do--
 
 **PREREQUISITE(S):**
@@ -13,7 +17,11 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/38aa748e-9f91-45
 
 **INSTALLATION:**
 
-- Shinto Samples
-- Shinto Manager
+- Shinto Manager - command-line interface
+- Shinto Samples - git repository for sample implementations
+
+Docker Image Creation:
+- Cloud Native Buildpacks (https://buildpacks.io/)
+- Google JiB (https://cloud.google.com/java/getting-started/jib)
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/32f31561-38db-4d3d-ac20-07a7ec9674d6
