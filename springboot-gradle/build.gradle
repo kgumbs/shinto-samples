@@ -1,5 +1,6 @@
 plugins {
     id 'org.springframework.boot' version '3.0.6'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 apply plugin: 'java'
 apply plugin: 'io.spring.dependency-management'
@@ -15,6 +16,14 @@ sourceSets {
     integrationTest {
         compileClasspath += sourceSets.main.output
         runtimeClasspath += sourceSets.main.output
+    }
+}
+
+jar {
+    version '1.0.0'
+    manifest {
+        attributes 'Class-Path': 'springboot-gradle-all.jar'
+        attributes 'Main-Class': 'tech.mrwconsulting.sample.Application'
     }
 }
 

@@ -9,9 +9,10 @@
         <version>3.0.6</version>
     </parent>
 
-    <name>springboot-helloworld</name>
+    <name>springboot-maven</name>
     <groupId>tech.mrwconsulting.sample</groupId>
-    <artifactId>springboot-helloworld</artifactId>
+    <artifactId>springboot-maven</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <dependencies>
