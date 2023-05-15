@@ -1,20 +1,8 @@
-buildscript {
-    ext {
-        springBootVersion = '1.5.3.RELEASE'
-    }
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
+plugins {
+    id 'org.springframework.boot' version '3.0.6'
 }
-
 apply plugin: 'java'
-apply plugin: 'org.springframework.boot'
-
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+apply plugin: 'io.spring.dependency-management'
 
 repositories {
     mavenCentral()
@@ -25,20 +13,19 @@ sourceSets {
         java.srcDir 'src/test/java'
     }
     integrationTest {
-        compileClasspath += main.output + test.output
-        runtimeClasspath += main.output + test.output
-        java.srcDir 'src/test-integration/java'
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
     }
 }
 
 configurations {
-    integrationTestCompile.extendsFrom testCompile
-    integrationTestRuntime.extendsFrom testRuntime
+    integrationTestRuntimeOnly.extendsFrom(runtimeOnly)
+    integrationTestImplementation.extendsFrom(implementation)
 }
 
 task itest(type: Test) {
-    testClassesDir = sourceSets.integrationTest.output.classesDir
     classpath = sourceSets.integrationTest.runtimeClasspath
+    testClassesDirs = sourceSets.integrationTest.output.classesDirs
 
     testLogging {
         events "passed", "skipped", "failed"
@@ -46,10 +33,10 @@ task itest(type: Test) {
 }
 
 dependencies {
-    compile('org.springframework.boot:spring-boot-starter-web') {
+    implementation('org.springframework.boot:spring-boot-starter-web') {
         exclude module: 'spring-boot-starter-tomcat'
     }
-    compile('org.springframework.boot:spring-boot-starter-jetty')
-    compile('org.springframework.boot:spring-boot-starter-actuator')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    implementation('org.springframework.boot:spring-boot-starter-jetty')
+    implementation('org.springframework.boot:spring-boot-starter-actuator')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }

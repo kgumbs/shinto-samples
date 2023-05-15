@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * two annotations that results in web requests returning data rather than a view.
  */
 @RestController
-public class HelloworldController {
+public class Controller {
 
     @RequestMapping("/")
     public String hello() {

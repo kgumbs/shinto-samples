@@ -27,10 +27,10 @@ import java.util.Arrays;
  */
 
 @SpringBootApplication
-public class HelloworldApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloworldApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 
