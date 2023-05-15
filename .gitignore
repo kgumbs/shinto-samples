@@ -1,13 +1,6 @@
 *.lock
 *-lock.*
 .DS_Store
-<<<<<<< HEAD
 **/target
 .gradle
 build
-=======
-**/dist
-**/target
-**/.venv
-**/.pytest_cache
->>>>>>> 84bc7df33802e3c64d0999ded2310d66c7a87b46
