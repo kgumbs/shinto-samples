@@ -1,4 +1,4 @@
-package tech.mrwconsulting.sample.helloworld;
+package tech.mrwconsulting.sample;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

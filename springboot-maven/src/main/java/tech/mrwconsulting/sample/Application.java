@@ -1,4 +1,4 @@
-package tech.mrwconsulting.sample.helloworld;
+package tech.mrwconsulting.sample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
