@@ -19,10 +19,13 @@ sourceSets {
     }
 }
 
+ext {
+    set("jakarta-servlet.version", '5.0.0')
+}
+
 jar {
     version '1.0.0'
     manifest {
-        attributes 'Class-Path': 'springboot-gradle-all.jar'
         attributes 'Main-Class': 'tech.mrwconsulting.sample.Application'
     }
 }
