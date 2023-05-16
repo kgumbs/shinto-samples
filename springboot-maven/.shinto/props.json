@@ -17,5 +17,9 @@
     "buildSpec": {
       "type": "JAVA",
       "packageManager": "MAVEN"
+    },
+    "imageBuilderEnabled": true,
+    "imageBuilder": {
+      "type": "BUILDPACK"
     }
 }
