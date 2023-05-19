@@ -1,54 +1,22 @@
 plugins {
-    id 'org.springframework.boot' version '3.0.6'
-    id 'com.github.johnrengelman.shadow' version '8.1.1'
+	id 'java'
+	id 'org.springframework.boot' version '3.1.0'
+	id 'io.spring.dependency-management' version '1.1.0'
 }
-apply plugin: 'java'
-apply plugin: 'io.spring.dependency-management'
+
+group = 'tech.mrwconsulting.sample'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
 
 repositories {
-    mavenCentral()
-}
-
-sourceSets {
-    test {
-        java.srcDir 'src/test/java'
-    }
-    integrationTest {
-        compileClasspath += sourceSets.main.output
-        runtimeClasspath += sourceSets.main.output
-    }
-}
-
-ext {
-    set("jakarta-servlet.version", '5.0.0')
-}
-
-jar {
-    version '1.0.0'
-    manifest {
-        attributes 'Main-Class': 'tech.mrwconsulting.sample.Application'
-    }
-}
-
-configurations {
-    integrationTestRuntimeOnly.extendsFrom(runtimeOnly)
-    integrationTestImplementation.extendsFrom(implementation)
-}
-
-task itest(type: Test) {
-    classpath = sourceSets.integrationTest.runtimeClasspath
-    testClassesDirs = sourceSets.integrationTest.output.classesDirs
-
-    testLogging {
-        events "passed", "skipped", "failed"
-    }
+	mavenCentral()
 }
 
 dependencies {
-    implementation('org.springframework.boot:spring-boot-starter-web') {
-        exclude module: 'spring-boot-starter-tomcat'
-    }
-    implementation('org.springframework.boot:spring-boot-starter-jetty')
-    implementation('org.springframework.boot:spring-boot-starter-actuator')
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
 }
