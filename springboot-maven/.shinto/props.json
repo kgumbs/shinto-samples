@@ -18,5 +18,8 @@
       "type": "JAVA",
       "packageManager": "MAVEN"
     },
-    "imageBuilderEnabled": true
+    "imageBuilderEnabled": true,
+    "imageBuilder": {
+      "type": "BUILDPACK"
+    }
 }

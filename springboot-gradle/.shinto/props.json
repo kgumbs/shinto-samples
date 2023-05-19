@@ -19,5 +19,8 @@
       "type": "JAVA",
       "packageManager": "GRADLE"
     },
-    "imageBuilderEnabled": true
+    "imageBuilderEnabled": true,
+    "imageBuilder": {
+      "type": "BUILDPACK"
+    }
 }
