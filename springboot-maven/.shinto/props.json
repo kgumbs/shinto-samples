@@ -16,7 +16,7 @@
     },
     "buildSpec": {
       "type": "JAVA",
-      "packageManager": "GRADLE"
+      "packageManager": "MAVEN"
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {
