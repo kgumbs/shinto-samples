@@ -2,8 +2,7 @@
     "metadata": {
       "SHINTO_PIPELINE": "python-pip",
       "DEBUG": "true",
-      "BUILD_OUTPUT": "false",
-      "BUILD_OUTPUT_DESTINATION": "dist"
+      "BUILDPACK_BUILDER": "gcr.io/buildpacks/builder"
     },
     "label": {
       "customer": "mrwconsulting",
@@ -21,6 +20,9 @@
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {
-      "type": "BUILDPACK"
+      "type": "BUILDPACK",
+      "env" : {
+        "GOOGLE_PYTHON_VERSION": "3.10.x"
+      }
     }
 }
