@@ -22,7 +22,8 @@
     "imageBuilder": {
       "type": "BUILDPACK",
       "env" : {
-        "GOOGLE_PYTHON_VERSION": "3.10.x"
+        "GOOGLE_PYTHON_VERSION": "3.10.x",
+        "PIP_DEFAULT_TIMEOUT": "60"
       }
     }
 }
