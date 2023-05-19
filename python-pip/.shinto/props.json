@@ -18,5 +18,9 @@
     "buildSpec": {
       "type": "PYTHON",
       "packageManager": "PIP"
+    },
+    "imageBuilderEnabled": true,
+    "imageBuilder": {
+      "type": "BUILDPACK"
     }
 }
