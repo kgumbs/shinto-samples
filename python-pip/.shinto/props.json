@@ -2,7 +2,8 @@
     "metadata": {
       "SHINTO_PIPELINE": "python-pip",
       "DEBUG": "true",
-      "BUILDPACK_BUILDER": "paketobuildpacks/builder:full"
+      "BUILDPACK_PACK": "paketo-buildpacks/python",
+      "BUILDPACK_BUILDER": "paketobuildpacks/builder:base"
     },
     "label": {
       "customer": "mrwconsulting",
