@@ -1,6 +1,7 @@
 *.lock
 *-lock.*
 .gradle
+.mvn
 .DS_Store
 
 target/
