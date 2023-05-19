@@ -1,5 +1,6 @@
 {
     "metadata": {
+      "DEBUG": "true",
       "SHINTO_PIPELINE": "springboot-maven",
       "BUILD_OUTPUT": "false",
       "BUILD_OUTPUT_DESTINATION": "target"
