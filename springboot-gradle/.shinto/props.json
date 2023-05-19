@@ -18,5 +18,9 @@
     "buildSpec": {
       "type": "JAVA",
       "packageManager": "GRADLE"
+    },
+    "imageBuilderEnabled": true,
+    "imageBuilder": {
+      "type": "BUILDPACK"
     }
 }
