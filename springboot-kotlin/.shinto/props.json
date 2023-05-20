@@ -17,7 +17,7 @@
     },
     "buildSpec": {
       "type": "JAVA",
-      "packageManager": "GRADLE"
+      "packageManager": "KOTLIN"
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {
