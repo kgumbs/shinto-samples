@@ -17,7 +17,10 @@
     },
     "buildSpec": {
       "type": "JAVA",
-      "packageManager": "MAVEN"
+      "packageManager": "MAVEN",
+      "env" : {
+        "WRAPPER_ENABLED": "true"
+      }
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {

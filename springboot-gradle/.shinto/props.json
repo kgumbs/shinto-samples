@@ -3,7 +3,7 @@
       "DEBUG": "true",
       "SHINTO_PIPELINE": "springboot-gradle",
       "BUILD_OUTPUT": "false",
-      "BUILD_OUTPUT_DESTINATION": "target"
+      "BUILD_OUTPUT_DESTINATION": "build"
     },
     "label": {
       "customer": "mrwconsulting",
@@ -17,7 +17,10 @@
     },
     "buildSpec": {
       "type": "JAVA",
-      "packageManager": "GRADLE"
+      "packageManager": "GRADLE",
+      "env" : {
+        "WRAPPER_ENABLED": "true"
+      }
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {
