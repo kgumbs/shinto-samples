@@ -2,7 +2,7 @@
     "metadata": {
       "DEBUG": "true",
       "SHINTO_PIPELINE": "python-pip",
-      "BUILDPACK_PACK": "paketo-buildpacks/python",
+      "BUILDPACK_PACK": "paketobuildpackspython",
       "BUILDPACK_BUILDER": "paketobuildpacks/builder:base"
     },
     "label": {
