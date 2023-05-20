@@ -2,7 +2,6 @@
     "metadata": {
       "DEBUG": "true",
       "SHINTO_PIPELINE": "python-pip",
-      "MARK": "paketo-buildpackspython",
       "BUILDPACK_BUILDER": "paketobuildpacks/builder:base"
     },
     "label": {
@@ -21,6 +20,9 @@
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {
-      "type": "BUILDPACK"
+      "type": "BUILDPACK",
+      "env": {
+        "BUILDPACK_PACK": "paketo-buildpacks/python"
+      }
     }
 }
