@@ -1,0 +1,28 @@
+{
+    "metadata": {
+      "DEBUG": "true",
+      "SHINTO_PIPELINE": "python-poetry",
+      "BUILDPACK_BUILDER": "paketobuildpacks/builder:base"
+    },
+    "label": {
+      "customer": "mrwconsulting",
+      "project": "python-poetry"
+    },
+    "git": {
+      "owner": "mrwconsulting",
+      "branch": "main",
+      "repository": "shinto-samples",
+      "codeStarId": "4e766cf1-d502-43b9-b9f9-4b22ee0c0db0"
+    },
+    "buildSpec": {
+      "type": "PYTHON",
+      "packageManager": "POETRY"
+    },
+    "imageBuilderEnabled": true,
+    "imageBuilder": {
+      "type": "BUILDPACK",
+      "env": {
+        "BUILDPACK_PACK": "paketo-buildpacks/python"
+      }
+    }
+}
