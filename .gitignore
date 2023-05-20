@@ -3,6 +3,11 @@
 .gradle
 .mvn
 .DS_Store
+.env
+.venv
+build
+dist
+target
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
