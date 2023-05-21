@@ -17,10 +17,7 @@
     },
     "buildSpec": {
       "type": "JAVA",
-      "packageManager": "GRADLE",
-      "env" : {
-        "WRAPPER_ENABLED": "true"
-      }
+      "packageManager": "GRADLE"
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {
