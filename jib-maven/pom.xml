@@ -42,6 +42,14 @@
 				<to>
 					<image>shinto</image>
 				</to>
+				<from>                           
+					<image>openjdk:alpine</image>
+				</from>
+				<container>
+					<ports>
+						<port>8080</port>
+					</ports>
+				</container>
 				</configuration>
 			</plugin>
 		</plugins>
