@@ -1,7 +1,6 @@
 *.lock
 *-lock.*
 .gradle
-.mvn
 .DS_Store
 .env
 .venv
