@@ -8,7 +8,7 @@
 		<version>3.1.0</version>
 	</parent>
 	<groupId>tech.mrwconsulting.sample</groupId>
-	<artifactId>springboot-gradle/artifactId>
+	<artifactId>springboot-gradle</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-gradle</name>
 	<properties>
