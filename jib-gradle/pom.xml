@@ -8,9 +8,9 @@
 		<version>3.1.0</version>
 	</parent>
 	<groupId>tech.mrwconsulting.sample</groupId>
-	<artifactId>springboot-gradle</artifactId>
+	<artifactId>jib-gradle</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-gradle</name>
+	<name>jib-gradle</name>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
