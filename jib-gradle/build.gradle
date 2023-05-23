@@ -25,6 +25,9 @@ jib {
 	from {
 		image = 'openjdk:19-alpine'
 	}
+	container {
+		ports = ['8080']
+	}
 }
 
 test {
