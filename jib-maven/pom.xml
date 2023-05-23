@@ -38,17 +38,17 @@
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
 				<configuration>
-				<to>
-					<image>jib-maven</image>
-				</to>
-				<from>                           
-					<image>openjdk:alpine</image>
-				</from>
-				<container>
-					<ports>
-						<port>8080</port>
-					</ports>
-				</container>
+					<to>
+						<image>jib-maven</image>
+					</to>
+					<from>                           
+						<image>openjdk:alpine</image>
+					</from>
+					<container>
+						<ports>
+							<port>8080</port>
+						</ports>
+					</container>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -18,6 +18,15 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
+jib {
+	to {
+		image = 'jib-gradle'
+	}
+	from {
+		image = 'openjdk:alpine'
+	}
+}
+
 test {
 	useJUnitPlatform()
 }
