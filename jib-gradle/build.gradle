@@ -23,7 +23,7 @@ jib {
 		image = 'jib-gradle'
 	}
 	from {
-		image = 'openjdk:alpine'
+		image = 'openjdk:19-alpine'
 	}
 }
 
