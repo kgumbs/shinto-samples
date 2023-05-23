@@ -1,6 +1,6 @@
 {
     "metadata": {
-      "DEBUG": "true",
+      "DEBUG": "false",
       "SHINTO_PIPELINE": "springboot-kotlin",
       "BUILD_OUTPUT": "false",
       "BUILD_OUTPUT_DESTINATION": "build"

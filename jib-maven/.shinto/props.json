@@ -1,6 +1,6 @@
 {
     "metadata": {
-      "DEBUG": "true",
+      "DEBUG": "false",
       "SHINTO_PIPELINE": "jib-maven",
       "BUILD_OUTPUT": "false",
       "BUILD_OUTPUT_DESTINATION": "target"

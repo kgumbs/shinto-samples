@@ -6,7 +6,6 @@ plugins {
 }
 
 group = 'tech.mrwconsulting.sample'
-version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
@@ -21,6 +20,7 @@ dependencies {
 jib {
 	to {
 		image = 'jib-gradle'
+		tags = ['0.0.1-SNAPSHOT','latest']
 	}
 	from {
 		image = 'openjdk:alpine'
