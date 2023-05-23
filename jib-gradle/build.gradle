@@ -23,7 +23,7 @@ jib {
 		image = 'jib-gradle'
 	}
 	from {
-		image = 'openjdk:19-alpine'
+		image = 'openjdk:alpine'
 	}
 	container {
 		ports = ['8080']
