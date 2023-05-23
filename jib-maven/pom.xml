@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jib-maven</name>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -42,7 +42,7 @@
 						<image>jib-maven</image>
 					</to>
 					<from>                           
-						<image>openjdk:19-alpine</image>
+						<image>openjdk:alpine</image>
 					</from>
 					<container>
 						<ports>
