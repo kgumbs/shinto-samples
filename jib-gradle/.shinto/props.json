@@ -24,6 +24,7 @@
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {
-      "type": "JIB"
+      "type": "JIB",
+      "imageName": "jib-gradle:0.0.1-SNAPSHOT"
     }
 }
