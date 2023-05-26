@@ -25,6 +25,7 @@
     "imageBuilderEnabled": true,
     "imageBuilder": {
       "type": "JIB",
+      "scanType": ["ECR","SNYK"],
       "imageName": "jib-gradle:0.0.1-SNAPSHOT",
       "env" : {
         "SCAN_FINDINGS_DISABLED": "true",

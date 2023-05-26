@@ -25,6 +25,7 @@
     "imageBuilderEnabled": true,
     "imageBuilder": {
       "type": "BUILDPACK",
+      "scanType": ["ECR","SNYK"],
       "env": {
         "BUILDPACK_PACK": "paketo-buildpacks/python",
         "SCAN_FINDINGS_DISABLED": "true",
