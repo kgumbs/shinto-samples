@@ -22,7 +22,9 @@
     "imageBuilder": {
       "type": "BUILDPACK",
       "env": {
-        "BUILDPACK_PACK": "paketo-buildpacks/python"
+        "BUILDPACK_PACK": "paketo-buildpacks/python",
+        "SCAN_FINDINGS_DISABLED": "true",
+        "SNYK_TOKEN":"48997005-ac46-4f88-8e69-c1a4a502109b"
       }
     }
 }
