@@ -22,4 +22,4 @@ SHINTO_TOKEN=$(aws cognito-idp initiate-auth  \
                 --output text \
                 --auth-parameters USERNAME=${COGNITO_USERNAME},PASSWORD=${COGNITO_PASSWORD})
 
-echo "export SHINTO_TOKEN=${SHINTO_TOKEN}"
+echo "SHINTO_TOKEN=${SHINTO_TOKEN}"
