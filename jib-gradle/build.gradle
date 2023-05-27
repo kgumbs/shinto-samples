@@ -23,7 +23,7 @@ jib {
 		tags = ['0.0.1-SNAPSHOT','latest']
 	}
 	from {
-		image = 'openjdk:alpine'
+		image = 'openjdk:17-alpine'
 	}
 	container {
 		ports = ['8080']
