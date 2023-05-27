@@ -7,9 +7,8 @@ if [ "${DEBUG}" == "true" ]; then
 fi
 
 COGNITO_USERNAME='admin'
-DEFAULT_CLIENT_ID='7b4r2qbn80ba8tako04t1eshob'
 DEFAULT_PASSWORD='Password01!'
-
+DEFAULT_CLIENT_ID='59ntjm9mb0j6keujpvd5slflgc'
 
 read -e -p  "Enter admin password: [$DEFAULT_PASSWORD] " COGNITO_PASSWORD
 COGNITO_PASSWORD="${COGNITO_PASSWORD:-$DEFAULT_PASSWORD}"
