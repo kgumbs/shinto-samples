@@ -3,7 +3,8 @@
       "DEBUG": "false",
       "SHINTO_PIPELINE": "jib-gradle",
       "BUILD_OUTPUT": "false",
-      "BUILD_OUTPUT_DESTINATION": "build"
+      "BUILD_OUTPUT_DESTINATION": "build",
+      "IMAGE_FINDINGS_DISABLED": "true"
     },
     "label": {
       "customer": "mrwconsulting",
