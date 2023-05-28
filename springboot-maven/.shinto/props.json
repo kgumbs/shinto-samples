@@ -3,7 +3,7 @@
       "DEBUG": "false",
       "SHINTO_PIPELINE": "springboot-maven",
       "ARTIFACT_OUTPUT": "true",
-      "ARTIFACT_OUTPUT_DESTINATION": "springboot-maven/target",
+      "ARTIFACT_OUTPUT_DESTINATION": "target",
       "COMPUTE_TYPE": "MEDIUM"
     },
     "label": {
