@@ -4,8 +4,7 @@
       "SHINTO_PIPELINE": "springboot-kotlin",
       "BUILD_OUTPUT": "false",
       "BUILD_OUTPUT_DESTINATION": "build",
-      "IMAGESCAN_FINDINGS_DISABLED": "true",
-      "COMPUTE_TYPE": "LARGE"
+      "COMPUTE_TYPE": "MEDIUM"
     },
     "label": {
       "customer": "mrwconsulting",
@@ -24,9 +23,9 @@
     "imageBuilderEnabled": true,
     "imageBuilder": {
       "type": "BUILDPACK",
-      "scanType": ["ECR","SNYK"],
+      "imageScanType": ["ECR","SNYK"],
       "env": {
-        "SCAN_FINDINGS_DISABLED": "true",
+        "IMAGESCAN_FINDINGS_DISABLED": "true",
         "SNYK_TOKEN":"48997005-ac46-4f88-8e69-c1a4a502109b"
       }
     }

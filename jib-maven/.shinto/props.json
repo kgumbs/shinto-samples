@@ -3,8 +3,7 @@
       "DEBUG": "false",
       "SHINTO_PIPELINE": "jib-maven",
       "BUILD_OUTPUT": "false",
-      "BUILD_OUTPUT_DESTINATION": "target",
-      "IMAGESCAN_FINDINGS_DISABLED": "true"
+      "BUILD_OUTPUT_DESTINATION": "target"
     },
     "label": {
       "customer": "mrwconsulting",
@@ -23,9 +22,9 @@
     "imageBuilderEnabled": true,
     "imageBuilder": {
       "type": "JIB",
-      "scanType": ["ECR","SNYK"],
+      "imageScanType": ["ECR","SNYK"],
       "env" : {
-        "SCAN_FINDINGS_DISABLED": "true",
+        "IMAGESCAN_FINDINGS_DISABLED": "true",
         "SNYK_TOKEN":"48997005-ac46-4f88-8e69-c1a4a502109b"
       }
     }
