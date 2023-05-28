@@ -4,7 +4,8 @@
       "SHINTO_PIPELINE": "springboot-maven",
       "BUILD_OUTPUT": "false",
       "BUILD_OUTPUT_DESTINATION": "target",
-      "IMAGESCAN_FINDINGS_DISABLED": "true"
+      "IMAGESCAN_FINDINGS_DISABLED": "true",
+      "COMPUTE_TYPE": "LARGE"
     },
     "label": {
       "customer": "mrwconsulting",

@@ -4,7 +4,8 @@
       "SHINTO_PIPELINE": "springboot-gradle",
       "BUILD_OUTPUT": "false",
       "BUILD_OUTPUT_DESTINATION": "build",
-      "IMAGESCAN_FINDINGS_DISABLED": "true"
+      "IMAGESCAN_FINDINGS_DISABLED": "true",
+      "COMPUTE_TYPE": "LARGE"
     },
     "label": {
       "customer": "mrwconsulting",
