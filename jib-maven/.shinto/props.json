@@ -2,8 +2,8 @@
     "metadata": {
       "DEBUG": "false",
       "SHINTO_PIPELINE": "jib-maven",
-      "ARTIFACT_OUTPUT": "false",
-      "ARTIFACT_OUTPUT_DESTINATION": "target"
+      "ARTIFACT_OUTPUT": "true",
+      "ARTIFACT_OUTPUT_DESTINATION": "jib-maven/target"
     },
     "label": {
       "customer": "mrwconsulting",

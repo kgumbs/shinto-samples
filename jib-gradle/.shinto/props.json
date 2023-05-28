@@ -2,8 +2,8 @@
     "metadata": {
       "DEBUG": "false",
       "SHINTO_PIPELINE": "jib-gradle",
-      "ARTIFACT_OUTPUT": "false",
-      "ARTIFACT_OUTPUT_DESTINATION": "build"
+      "ARTIFACT_OUTPUT": "true",
+      "ARTIFACT_OUTPUT_DESTINATION": "jib-gradle/build"
     },
     "label": {
       "customer": "mrwconsulting",
