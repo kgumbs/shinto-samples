@@ -18,6 +18,7 @@
     "buildSpec": {
       "type": "JAVA",
       "packageManager": "GRADLE",
+      "codeScanType": ["CODACY","SNYK"],
       "env" : {
         "WRAPPER_ENABLED": "true"
       }

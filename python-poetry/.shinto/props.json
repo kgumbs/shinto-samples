@@ -16,7 +16,8 @@
     },
     "buildSpec": {
       "type": "PYTHON",
-      "packageManager": "POETRY"
+      "packageManager": "POETRY",
+      "codeScanType": ["CODACY","SNYK"]
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {

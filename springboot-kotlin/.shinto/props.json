@@ -18,7 +18,8 @@
     },
     "buildSpec": {
       "type": "JAVA",
-      "packageManager": "GRADLE"
+      "packageManager": "GRADLE",
+      "codeScanType": ["CODACY","SNYK"]
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {

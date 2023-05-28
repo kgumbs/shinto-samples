@@ -17,7 +17,8 @@
     },
     "buildSpec": {
       "type": "JAVA",
-      "packageManager": "MAVEN"
+      "packageManager": "MAVEN",
+      "codeScanType": ["CODACY","SNYK"]
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {

@@ -16,7 +16,8 @@
     },
     "buildSpec": {
       "type": "PYTHON",
-      "packageManager": "PIP"
+      "packageManager": "PIP",
+      "codeScanType": ["CODACY","SNYK"]
     },
     "imageBuilderEnabled": true,
     "imageBuilder": {
