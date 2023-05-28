@@ -2,8 +2,8 @@
     "metadata": {
       "DEBUG": "false",
       "SHINTO_PIPELINE": "springboot-maven",
-      "BUILD_OUTPUT": "false",
-      "BUILD_OUTPUT_DESTINATION": "target",
+      "ARTIFACT_OUTPUT": "false",
+      "ARTIFACT_OUTPUT_DESTINATION": "target",
       "COMPUTE_TYPE": "MEDIUM"
     },
     "label": {

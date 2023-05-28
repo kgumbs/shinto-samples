@@ -2,8 +2,8 @@
     "metadata": {
       "DEBUG": "false",
       "SHINTO_PIPELINE": "springboot-kotlin",
-      "BUILD_OUTPUT": "false",
-      "BUILD_OUTPUT_DESTINATION": "build",
+      "ARTIFACT_OUTPUT": "false",
+      "ARTIFACT_OUTPUT_DESTINATION": "build",
       "COMPUTE_TYPE": "MEDIUM"
     },
     "label": {
