@@ -4,7 +4,7 @@
       "SHINTO_PIPELINE": "jib-maven",
       "BUILD_OUTPUT": "false",
       "BUILD_OUTPUT_DESTINATION": "target",
-      "IMAGE_FINDINGS_DISABLED": "true"
+      "IMAGESCAN_FINDINGS_DISABLED": "true"
     },
     "label": {
       "customer": "mrwconsulting",

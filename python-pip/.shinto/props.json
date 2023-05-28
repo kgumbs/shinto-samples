@@ -3,7 +3,7 @@
       "DEBUG": "false",
       "SHINTO_PIPELINE": "python-pip",
       "BUILDPACK_BUILDER": "paketobuildpacks/builder:base",
-      "IMAGE_FINDINGS_DISABLED": "true"
+      "IMAGESCAN_FINDINGS_DISABLED": "true"
     },
     "label": {
       "customer": "mrwconsulting",
