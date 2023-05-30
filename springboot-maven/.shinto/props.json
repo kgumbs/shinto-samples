@@ -44,11 +44,14 @@
     "type": "K8SMANIFEST",
     "global": {
       "region": [
-        "us-east-1", "us-east-2"
+        "us-east-1",
+        "us-east-2"
       ]
     },
-    "stage": {
-      "target": "DEV"
-    }
+    "stage": [
+      {
+        "target": "DEV"
+      }
+    ]
   }
 }
