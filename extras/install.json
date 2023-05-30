@@ -1,20 +1,13 @@
 {
-  "npmrc": {
-    "token": "need to enter token",
-    "scope": "@mrwconsulting",
-    "registry": "npm.pkg.github.com"
+  "vpcId": "vpc-0aba86ddea3045061",
+  "subnetType": "Private",
+  "computeType": "BUILD_GENERAL1_SMALL",
+  "image": {
+    "repository": "shinto",
+    "tagOrDigest": "1.0.0"
   },
-  "config": {
-    "vpcId": "vpc-0aba86ddea3045061",
-    "subnetType": "Private",
-    "computeType": "BUILD_GENERAL1_SMALL",
-    "image": {
-      "repository": "shinto",
-      "tagOrDigest": "1.0.0"
-    },
-    "synth": {
-      "selfMutation": true,
-      "crossAccountKeys": true
-    }
+  "synth": {
+    "selfMutation": true,
+    "crossAccountKeys": true
   }
 }
