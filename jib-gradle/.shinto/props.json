@@ -29,8 +29,7 @@
       "imageScanType": ["ECR","SNYK"],
       "imageName": "jib-gradle:0.0.1-SNAPSHOT",
       "env" : {
-        "IMAGESCAN_FINDINGS_DISABLED": "true",
-        "SNYK_TOKEN":"48997005-ac46-4f88-8e69-c1a4a502109b"
+        "IMAGESCAN_FINDINGS_DISABLED": "true"
       }
     }
 }

@@ -25,8 +25,7 @@
       "imageScanType": ["ECR","SNYK"],
       "env": {
         "IMAGESCAN_FINDINGS_DISABLED": "true",
-        "BUILDPACK_PACK": "paketo-buildpacks/python",
-        "SNYK_TOKEN":"48997005-ac46-4f88-8e69-c1a4a502109b"
+        "BUILDPACK_PACK": "paketo-buildpacks/python"
       }
     }
 }
