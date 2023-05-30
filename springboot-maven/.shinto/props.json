@@ -1,36 +1,49 @@
 {
-    "metadata": {
-      "DEBUG": "false",
-      "SHINTO_PIPELINE": "springboot-maven",
-      "ARTIFACT_OUTPUT": "true",
-      "ARTIFACT_OUTPUT_DESTINATION": "springboot-maven/target",
-      "COMPUTE_TYPE": "MEDIUM"
-    },
-    "label": {
-      "customer": "mrwconsulting",
-      "project": "springboot-maven"
-    },
-    "git": {
-      "owner": "mrwconsulting",
-      "branch": "main",
-      "repository": "shinto-samples",
-      "codeStarId": "5e624f25-90dd-4557-b2e5-95918ad47bbc"
-    },
-    "buildSpec": {
-      "type": "JAVA",
-      "packageManager": "MAVEN",
-      "codeScanType": ["CODACY","SNYK"],
-      "env" : {
-        "WRAPPER_ENABLED": "true"
-      }
-    },
-    "imageBuilderEnabled": true,
-    "imageBuilder": {
-      "type": "BUILDPACK",
-      "imageScanType": ["ECR","SNYK"],
-      "env": {
-        "IMAGESCAN_FINDINGS_DISABLED": "true",
-        "SNYK_TOKEN":"48997005-ac46-4f88-8e69-c1a4a502109b"
-      }
+  "metadata": {
+    "DEBUG": "false",
+    "SHINTO_PIPELINE": "springboot-maven",
+    "ARTIFACT_OUTPUT": "true",
+    "ARTIFACT_OUTPUT_DESTINATION": "springboot-maven/target",
+    "COMPUTE_TYPE": "MEDIUM"
+  },
+  "label": {
+    "customer": "mrwconsulting",
+    "project": "springboot-maven"
+  },
+  "git": {
+    "owner": "mrwconsulting",
+    "branch": "main",
+    "repository": "shinto-samples",
+    "codeStarId": "5e624f25-90dd-4557-b2e5-95918ad47bbc"
+  },
+  "buildSpec": {
+    "type": "JAVA",
+    "packageManager": "MAVEN",
+    "codeScanType": [
+      "CODACY",
+      "SNYK"
+    ],
+    "env": {
+      "WRAPPER_ENABLED": "true"
     }
+  },
+  "imageBuilderEnabled": true,
+  "imageBuilder": {
+    "type": "BUILDPACK",
+    "imageScanType": [
+      "ECR",
+      "SNYK"
+    ],
+    "env": {
+      "IMAGESCAN_FINDINGS_DISABLED": "true",
+      "SNYK_TOKEN": "48997005-ac46-4f88-8e69-c1a4a502109b"
+    }
+  },
+  "deployEnabled": true,
+  "deploy": {
+    "type": "K8SMANIFEST",
+    "region": [
+      "us-east-1"
+    ]
+  }
 }
