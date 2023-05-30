@@ -42,8 +42,13 @@
   "deployEnabled": true,
   "deploy": {
     "type": "K8SMANIFEST",
-    "region": [
-      "us-east-1"
-    ]
+    "global": {
+      "region": [
+        "us-east-1", "us-east-2"
+      ]
+    },
+    "stage": {
+      "target": "DEV"
+    }
   }
 }
