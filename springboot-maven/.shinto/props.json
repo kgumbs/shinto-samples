@@ -46,7 +46,10 @@
       "region": [
         "us-east-1",
         "us-east-2"
-      ]
+      ],
+      "env": {
+        "CLUSTER_NAME": "HELLO-WORLD"
+      }
     },
     "stage": [
       {
