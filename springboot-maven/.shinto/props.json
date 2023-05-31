@@ -21,7 +21,7 @@
     "packageManager": "MAVEN",
     "codeScanType": ["CODACY"],
     "env": {
-      "WRAPPER_ENABLED": "true"
+      "WRAPPER_ENABLED": "false"
     }
   },
   "imageBuilderEnabled": true,
