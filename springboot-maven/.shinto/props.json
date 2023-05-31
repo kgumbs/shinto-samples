@@ -19,7 +19,7 @@
   "buildSpec": {
     "type": "JAVA",
     "packageManager": "MAVEN",
-    "codeScanType": ["CODACY"],
+    "codeScanType": ["CODACY","SNYK"],
     "env": {
       "PACKAGE_WRAPPER_ENABLED": "true"
     }
