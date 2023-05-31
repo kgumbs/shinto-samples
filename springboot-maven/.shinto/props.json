@@ -19,10 +19,7 @@
   "buildSpec": {
     "type": "JAVA",
     "packageManager": "MAVEN",
-    "codeScanType": [
-      "CODACY",
-      "SNYK"
-    ],
+    "codeScanType": ["CODACY","SNYK"],
     "env": {
       "WRAPPER_ENABLED": "true"
     }
@@ -30,10 +27,7 @@
   "imageBuilderEnabled": true,
   "imageBuilder": {
     "type": "BUILDPACK",
-    "imageScanType": [
-      "ECR",
-      "SNYK"
-    ],
+    "imageScanType": ["ECR","SNYK"],
     "env": {
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
@@ -42,10 +36,7 @@
   "deploy": {
     "type": "K8SMANIFEST",
     "global": {
-      "region": [
-        "us-east-1",
-        "us-east-2"
-      ],
+      "region": ["us-east-1","us-east-2"],
       "env": {
         "CLUSTER_NAME": "HELLO-WORLD"
       }
