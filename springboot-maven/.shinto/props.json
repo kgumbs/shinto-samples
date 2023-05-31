@@ -27,7 +27,7 @@
   "imageBuilderEnabled": true,
   "imageBuilder": {
     "type": "BUILDPACK",
-    "imageScanType": ["SNYK"],
+    "imageScanType": ["ECR"],
     "env": {
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
