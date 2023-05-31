@@ -36,7 +36,7 @@
   "deploy": {
     "type": "K8SMANIFEST",
     "global": {
-      "region": ["us-east-1","us-east-2"],
+      "region": ["us-east-1"],
       "env": {
         "CLUSTER_NAME": "mrwconsulting"
       }
