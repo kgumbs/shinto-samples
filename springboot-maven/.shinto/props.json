@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "DEBUG": "false",
+    "DEBUG": "true",
     "SHINTO_PIPELINE": "springboot-maven",
     "ARTIFACT_OUTPUT": "true",
     "ARTIFACT_OUTPUT_DESTINATION": "springboot-maven/target",
@@ -21,7 +21,8 @@
     "packageManager": "MAVEN",
     "codeScanType": ["CODACY","SNYK"],
     "env": {
-      "WRAPPER_ENABLED": "true"
+      "WRAPPER_ENABLED": "true",
+      "SNYK_TOKEN":"2628ae01-ae07-4a40-8781-c1c8ced00cf7"
     }
   },
   "imageBuilderEnabled": true,
