@@ -20,7 +20,7 @@
       "packageManager": "GRADLE",
       "codeScanType": ["CODACY","SNYK"],
       "env" : {
-        "WRAPPER_ENABLED": "true"
+        "PACKAGE_WRAPPER_ENABLED": "true"
       }
     },
     "imageBuilderEnabled": true,
