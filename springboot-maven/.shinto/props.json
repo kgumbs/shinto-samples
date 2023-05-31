@@ -21,8 +21,7 @@
     "packageManager": "MAVEN",
     "codeScanType": ["CODACY","SNYK"],
     "env": {
-      "WRAPPER_ENABLED": "true",
-      "SNYK_TOKEN":"43710f0b-2bf0-41ba-aa2c-cc3711a97553"
+      "WRAPPER_ENABLED": "true"
     }
   },
   "imageBuilderEnabled": true,
