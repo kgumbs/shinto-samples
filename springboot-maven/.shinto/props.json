@@ -22,7 +22,7 @@
     "codeScanType": ["CODACY","SNYK"],
     "env": {
       "WRAPPER_ENABLED": "true",
-      "SNYK_TOKEN":"2628ae01-ae07-4a40-8781-c1c8ced00cf7"
+      "SNYK_TOKEN":"43710f0b-2bf0-41ba-aa2c-cc3711a97553"
     }
   },
   "imageBuilderEnabled": true,
