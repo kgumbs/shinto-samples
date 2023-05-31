@@ -4,7 +4,7 @@
     "SHINTO_PIPELINE": "springboot-maven",
     "ARTIFACT_OUTPUT": "true",
     "ARTIFACT_OUTPUT_DESTINATION": "springboot-maven/target",
-    "COMPUTE_TYPE": "MEDIUM"
+    "COMPUTE_TYPE": "SMALL"
   },
   "label": {
     "customer": "mrwconsulting",
