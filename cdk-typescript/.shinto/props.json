@@ -21,14 +21,17 @@
       "packageManager": "NPM",
       "codeScanType": ["CODACY","SNYK"]
     },
+    "deployEnabled": true,
     "deploy":{
       "type": "CDK",
       "global": {
         "region": ["us-east-1"]
       },
-      "stage" : {
-        "target": "DEV",
-        "account": []
-      }
+      "stage" : [
+        {
+          "target": "DEV",
+          "account": ["570602336658"]
+        }
+      ]
     }
 }
