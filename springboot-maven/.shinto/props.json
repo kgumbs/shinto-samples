@@ -19,7 +19,7 @@
   "buildSpec": {
     "type": "JAVA",
     "packageManager": "MAVEN",
-    "codeScanType": [],
+    "codeScanType": ["CODACY","SNYK"],
     "env": {
       "PACKAGE_WRAPPER_ENABLED": "true"
     }
@@ -27,19 +27,16 @@
   "imageBuilderEnabled": true,
   "imageBuilder": {
     "type": "BUILDPACK",
-    "imageScanType": ["ECR"],
+    "imageScanType": ["ECR","SNYK"],
     "env": {
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
   },
   "deployEnabled": true,
   "deploy": {
-    "type": "K8SMANIFEST",
+    "type": "CDK",
     "global": {
-      "region": ["us-east-1"],
-      "env": {
-        "CLUSTER_NAME": "mrwconsulting"
-      }
+      "region": ["us-east-1"]
     },
     "stage": [
       {
