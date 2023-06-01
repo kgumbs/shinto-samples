@@ -4,7 +4,7 @@
       "SHINTO_PIPELINE": "cdk-typescript",
       "ARTIFACT_OUTPUT": "false",
       "ARTIFACT_OUTPUT_DESTINATION": "cdk-typescript/build",
-      "COMPUTE_TYPE": "MEDIUM"
+      "COMPUTE_TYPE": "SMALL"
     },
     "label": {
       "customer": "mrwconsulting",

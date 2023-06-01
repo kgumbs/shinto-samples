@@ -4,7 +4,7 @@
       "SHINTO_PIPELINE": "springboot-kotlin",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "springboot-kotlin/build",
-      "COMPUTE_TYPE": "MEDIUM"
+      "COMPUTE_TYPE": "SMALL"
     },
     "label": {
       "customer": "mrwconsulting",
