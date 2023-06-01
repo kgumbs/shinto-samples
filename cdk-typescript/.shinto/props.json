@@ -21,9 +21,9 @@
       "packageManager": "NPM",
       "codeScanType": ["CODACY","SNYK"]
     },
-    "deployEnabled": true,
     "deploy":{
       "type": "CDK",
+      "enabled": true,
       "global": {
         "region": ["us-east-1"]
       },

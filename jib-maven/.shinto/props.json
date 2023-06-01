@@ -20,9 +20,9 @@
       "packageManager": "MAVEN",
       "codeScanType": ["CODACY","SNYK"]
     },
-    "imageBuilderEnabled": true,
     "imageBuilder": {
       "type": "JIB",
+      "enabled": true,
       "imageScanType": ["ECR","SNYK"],
       "env" : {
         "IMAGESCAN_FINDINGS_DISABLED": "true"

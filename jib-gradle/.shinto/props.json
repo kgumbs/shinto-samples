@@ -23,9 +23,9 @@
         "PACKAGE_WRAPPER_ENABLED": "true"
       }
     },
-    "imageBuilderEnabled": true,
     "imageBuilder": {
       "type": "JIB",
+      "enabled": true,
       "imageScanType": ["ECR","SNYK"],
       "imageName": "jib-gradle:0.0.1-SNAPSHOT",
       "env" : {

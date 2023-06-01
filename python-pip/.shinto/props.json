@@ -19,9 +19,9 @@
       "packageManager": "PIP",
       "codeScanType": ["CODACY","SNYK"]
     },
-    "imageBuilderEnabled": true,
     "imageBuilder": {
       "type": "BUILDPACK",
+      "enabled": true,
       "imageScanType": ["ECR","SNYK"],
       "env": {
         "IMAGESCAN_FINDINGS_DISABLED": "true",
