@@ -4,9 +4,13 @@
 .DS_Store
 .env
 .venv
+*.js
+*.d.ts
+
 build
 dist
 target
+**/node_modules
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
