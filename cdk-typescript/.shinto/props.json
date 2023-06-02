@@ -23,14 +23,14 @@
     },
     "deploy":{
       "type": "CDK",
-      "enabled": false,
+      "enabled": true,
       "global": {
         "region": ["us-east-1"]
       },
       "stage" : [
         {
           "target": "DEV",
-          "account": []
+          "account": "570602336658"
         }
       ]
     }
