@@ -25,13 +25,13 @@
       "type": "CDK",
       "enabled": true,
       "global": {
-        "region": ["us-east-1","us-east-2"],
+        "region": ["us-east-1"],
         "approval": true
       },
       "stage" : [
         {
           "target": "DEV",
-          "account": "xxxxxxxxxxxxxxxxx"
+          "account": "570602336658"
         }
       ]
     }
