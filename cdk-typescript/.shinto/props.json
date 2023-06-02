@@ -1,7 +1,7 @@
 {
     "metadata": {
       "DEBUG": "false",
-      "SHINTO_PIPELINE": "cdk-typescript",
+      "PROJECT_WORKSPACE": "cdk-typescript",
       "ARTIFACT_OUTPUT": "false",
       "ARTIFACT_OUTPUT_DESTINATION": "cdk-typescript/build",
       "COMPUTE_TYPE": "SMALL"

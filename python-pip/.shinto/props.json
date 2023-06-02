@@ -1,7 +1,7 @@
 {
     "metadata": {
       "DEBUG": "false",
-      "SHINTO_PIPELINE": "python-pip",
+      "PROJECT_WORKSPACE": "python-pip",
       "BUILDPACK_BUILDER": "paketobuildpacks/builder:base"
     },
     "label": {

@@ -1,7 +1,7 @@
 {
     "metadata": {
       "DEBUG": "false",
-      "SHINTO_PIPELINE": "springboot-kotlin",
+      "PROJECT_WORKSPACE": "springboot-kotlin",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "springboot-kotlin/build",
       "COMPUTE_TYPE": "SMALL"

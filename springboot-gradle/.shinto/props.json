@@ -1,7 +1,7 @@
 {
     "metadata": {
       "DEBUG": "false",
-      "SHINTO_PIPELINE": "springboot-gradle",
+      "PROJECT_WORKSPACE": "springboot-gradle",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "springboot-gradle/build",
       "COMPUTE_TYPE": "SMALL"

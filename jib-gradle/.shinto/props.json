@@ -1,7 +1,7 @@
 {
     "metadata": {
       "DEBUG": "false",
-      "SHINTO_PIPELINE": "jib-gradle",
+      "PROJECT_WORKSPACE": "jib-gradle",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "jib-gradle/build"
     },

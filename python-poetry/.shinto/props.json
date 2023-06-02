@@ -1,7 +1,7 @@
 {
     "metadata": {
       "DEBUG": "false",
-      "SHINTO_PIPELINE": "python-poetry",
+      "PROJECT_WORKSPACE": "python-poetry",
       "BUILDPACK_BUILDER": "paketobuildpacks/builder:base"
     },
     "label": {

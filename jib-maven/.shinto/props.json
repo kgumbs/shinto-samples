@@ -1,7 +1,7 @@
 {
     "metadata": {
       "DEBUG": "false",
-      "SHINTO_PIPELINE": "jib-maven",
+      "PROJECT_WORKSPACE": "jib-maven",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "jib-maven/target"
     },
