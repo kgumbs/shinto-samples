@@ -1,6 +1,6 @@
 {
     "metadata": {
-      "DEBUG": "false",
+      "DEBUG": "true",
       "PROJECT_WORKSPACE": "cdk-typescript",
       "ARTIFACT_OUTPUT": "false",
       "ARTIFACT_OUTPUT_DESTINATION": "build",
