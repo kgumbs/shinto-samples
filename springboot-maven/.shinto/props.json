@@ -1,7 +1,7 @@
 {
   "metadata": {
     "DEBUG": "true",
-    "SHINTO_PIPELINE": "springboot-maven",
+    "PROJECT_WORKSPACE": "springboot-maven",
     "ARTIFACT_OUTPUT": "true",
     "ARTIFACT_OUTPUT_DESTINATION": "target",
     "COMPUTE_TYPE": "SMALL"
