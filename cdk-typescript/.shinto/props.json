@@ -3,7 +3,7 @@
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "cdk-typescript",
       "ARTIFACT_OUTPUT": "false",
-      "ARTIFACT_OUTPUT_DESTINATION": "cdk-typescript/build",
+      "ARTIFACT_OUTPUT_DESTINATION": "build",
       "COMPUTE_TYPE": "SMALL"
     },
     "label": {

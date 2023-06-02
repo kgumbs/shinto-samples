@@ -3,7 +3,7 @@
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "springboot-gradle",
       "ARTIFACT_OUTPUT": "true",
-      "ARTIFACT_OUTPUT_DESTINATION": "springboot-gradle/build",
+      "ARTIFACT_OUTPUT_DESTINATION": "build",
       "COMPUTE_TYPE": "SMALL"
     },
     "label": {

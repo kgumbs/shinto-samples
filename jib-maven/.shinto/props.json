@@ -3,7 +3,7 @@
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "jib-maven",
       "ARTIFACT_OUTPUT": "true",
-      "ARTIFACT_OUTPUT_DESTINATION": "jib-maven/target"
+      "ARTIFACT_OUTPUT_DESTINATION": "target"
     },
     "label": {
       "customer": "mrwconsulting",
