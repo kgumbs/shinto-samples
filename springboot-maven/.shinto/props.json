@@ -31,17 +31,5 @@
     "env": {
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
-  },
-  "deploy": {
-    "type": "CDK",
-    "enabled": true,
-    "global": {
-      "region": ["us-east-1"]
-    },
-    "stage": [
-      {
-        "target": "DEV"
-      }
-    ]
   }
 }
