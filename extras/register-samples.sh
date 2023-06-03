@@ -15,6 +15,7 @@ PARENT_DIR="${PARENT_DIR:-$DEFAULT_DIR}"
 read -e -p  "Sleep time between samples: [$DEFAULT_SLEEPTIME] " SLEEPTIME
 SLEEPTIME="${SLEEPTIME:-$DEFAULT_SLEEPTIME}"
 for INDEX in "${LIST[@]}"; do
+    echo "registering ${INDEX} ....."
     shinto-manager register $PARENT_DIR/$INDEX/.shinto/props.json
     echo "pausing between registering...${SLEEPTIME} seconds"
     sleep ${SLEEPTIME}
