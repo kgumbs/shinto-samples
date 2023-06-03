@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "DEBUG": "true",
+    "DEBUG": "false",
     "PROJECT_WORKSPACE": "springboot-maven",
     "ARTIFACT_OUTPUT": "true",
     "ARTIFACT_OUTPUT_DESTINATION": "target",
