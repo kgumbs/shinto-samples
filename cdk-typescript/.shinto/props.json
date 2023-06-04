@@ -31,7 +31,6 @@
       "stage" : [
         {
           "target": "DEV",
-          "region": ["us-east-1","us-east-2"],
           "account": "570602336658"
         }
       ]
