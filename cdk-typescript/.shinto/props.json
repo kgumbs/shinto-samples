@@ -23,7 +23,7 @@
     },
     "deploy":{
       "type": "CDK",
-      "enabled": false,
+      "enabled": true,
       "global": {
         "region": ["us-east-1","us-east-2"],
         "approval": true
