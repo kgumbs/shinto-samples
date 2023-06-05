@@ -1,8 +1,7 @@
-import pytest
-from helloworld.helloworld import app as flask_app
+from helloworld.helloworld import app as app
 
 def test_index_route():
-    client=flask_app.test_client()
+    client=app.test_client()
     response=client().get('/')
 
     assert response.status_code == 200
