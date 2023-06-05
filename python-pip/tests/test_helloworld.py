@@ -1,8 +1,7 @@
-from src.helloworld import app as app
+from src.helloworld import app
 
 def test_index_route():
-    client=app.test_client()
-    response=client().get('/')
+    response=app.test_client().get('/')
 
     assert response.status_code == 200
     assert response.data.decode('utf-8') == 'Hello, World!'
