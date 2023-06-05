@@ -32,7 +32,6 @@ class LambdaCronStack(Stack):
         )
         rule.add_target(targets.LambdaFunction(lambdaFn))
 
-
 app = App()
 LambdaCronStack(app, "LambdaCronExample",
     env=Environment(account=os.getenv('TARGET_ACCOUNT'), region=os.getenv('TARGET_REGION')),
