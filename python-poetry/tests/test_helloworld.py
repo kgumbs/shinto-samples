@@ -1,4 +1,4 @@
-from helloworld.helloworld import app as app
+from helloworld.helloworld import app
 
 def test_index_route():
     client=app.test_client()
