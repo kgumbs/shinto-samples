@@ -7,8 +7,8 @@ from aws_cdk import (
 )
 
 class LambdaCronStack(Stack):
-    def __init__(self, app: App, id: str) -> None:
-        super().__init__(app, id)
+    def __init__(self, app: App, id: str, **kwargs) -> None:
+        super().__init__(app, id, **kwargs)
 
         with open("lambda-handler.py", encoding="utf8") as fp:
             handler_code = fp.read()
