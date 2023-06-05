@@ -1,4 +1,4 @@
-from helloworld import app
+from flask import app
 
 def test_index_route():
     response = app.test_client().get('/')
