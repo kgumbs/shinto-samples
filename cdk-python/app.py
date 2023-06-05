@@ -1,10 +1,10 @@
+import os
 from aws_cdk import (
     aws_events as events,
     aws_lambda as lambda_,
     aws_events_targets as targets,
-    App, Duration, Stack
+    App, Duration, Environment, Stack
 )
-
 
 class LambdaCronStack(Stack):
     def __init__(self, app: App, id: str) -> None:
@@ -34,5 +34,7 @@ class LambdaCronStack(Stack):
 
 
 app = App()
-LambdaCronStack(app, "LambdaCronExample")
+LambdaCronStack(app, "LambdaCronExample",
+    env=Environment(account=os.getenv('TARGET_ACCOUNT'), region=os.getenv('TARGET_REGION')),
+)
 app.synth()
