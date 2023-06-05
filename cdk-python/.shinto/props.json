@@ -21,7 +21,7 @@
     },
     "deploy":{
       "type": "CDK",
-      "enabled": false,
+      "enabled": true,
       "global": {
         "region": ["us-east-1"],
         "approval": true
@@ -29,7 +29,7 @@
       "stage" : [
         {
           "target": "DEV",
-          "account": "xxxxxxxxxxx"
+          "account": "570602336658"
         }
       ]
     }
