@@ -11,6 +11,11 @@ classifiers = [
     "Topic :: Utilities"
 ]
 
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
 [tool.poetry.dependencies]
 python = "^3.9"
 Flask = "^2.3.2"
