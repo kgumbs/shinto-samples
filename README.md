@@ -37,3 +37,6 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/546f5425-e76a-45
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/e28a80f7-a7ad-4dcf-ade1-b2edc47ed68c
 
+**Install**
+1. Request Shinto access token (email: mark@mrwconsulting.tech)
+2. Downloadn Shinto Manager
