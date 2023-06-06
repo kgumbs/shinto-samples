@@ -17,7 +17,7 @@
     "buildSpec": {
       "type": "JAVA",
       "packageManager": "MAVEN",
-      "codeScanType": ["CODACY","SNYK"]
+      "codeScanType": []
     },
     "deploy":{
       "type": "CDK",
