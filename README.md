@@ -14,7 +14,8 @@
 
 >>*Shinto Framework can easily be updated to support other vendor implementations like SonarQube, Shiftleft etc.*
 
-[![Watch the video](https://img.youtube.com/vi/nTQUwghvy5Q/default.jpg)](https://youtu.be/f_XWltepAOI)
+
+[<img src="https://img.youtube.com/vi/APOPm01BVrk/hqdefault.jpg" width="600" height="300"/>](https://youtu.be/WWG-9t2vF6o)
 
 **Containerize Applications** (No more writing dockerfiles)—build optimized docker images for applications without deep mastery of docker best-practices.
 - Fast - Deploy changes quickly by separating applications into multiple layers, splitting dependencies from classes.
@@ -33,5 +34,6 @@
 > - [AWS CDK Version 2.81.0 or greater](https://aws.amazon.com/getting-started/guides/setup-cdk/module-two/)
 > - Shinto Access Token (email: mark@mrwconsulting)
 
-https://github.com/mrwconsulting/shinto-samples/assets/82276384/1fe68a53-bdbb-4f47-97af-b775b682b2bc
+
+[<img src="https://img.youtube.com/vi/APOPm01BVrk/hqdefault.jpg" width="600" height="300"/>](https://youtu.be/f_XWltepAOI)
 
