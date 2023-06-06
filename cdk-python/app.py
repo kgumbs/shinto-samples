@@ -34,6 +34,6 @@ class LambdaCronStack(Stack):
 
 app = App()
 LambdaCronStack(app, "LambdaCronExample",
-    env=Environment(account=os.getenv('TARGET_ACCOUNT'), region=os.getenv('TARGET_REGION')),
+    env=Environment(region=os.getenv('TARGET_REGION',account=os.getenv('TARGET_ACCOUNT'))),
 )
 app.synth()
