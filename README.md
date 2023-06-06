@@ -21,3 +21,8 @@
 >> - Google JiB (https://cloud.google.com/java/getting-started/jib)
 
 >>*Shinto Framework can easily be updated to support other vendor implementations*
+
+**prerequisites**
+
+https://github.com/mrwconsulting/shinto-samples/assets/82276384/1fe68a53-bdbb-4f47-97af-b775b682b2bc
+
