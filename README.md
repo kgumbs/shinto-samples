@@ -18,7 +18,7 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/3a0ae7df-7b55-42
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/4f3ab0dc-a2b1-463f-9f56-955f3f5696fb
 
-Containerize Applications** (No more writing dockerfiles)—build optimized docker images for applications without deep mastery of docker best-practices.
+**Containerize Applications** (no more writing dockerfiles)—build optimized docker images for applications without deep mastery of docker best-practices.
 - Fast - Deploy changes quickly by separating applications into multiple layers, splitting dependencies from classes.
 - Reproducible - Rebuilding a container image with the same contents always generates the same image. Never trigger an unnecessary update again.
 
