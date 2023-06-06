@@ -15,7 +15,7 @@
 >>*Shinto Framework can easily be updated to support other vendor implementations like SonarQube, Shiftleft etc.*
 
 
-[<img src="https://img.youtube.com/vi/APOPm01BVrk/hqdefault.jpg" width="600" height="300"/>](https://youtu.be/WWG-9t2vF6o)
+[<img src="https://img.youtube.com/vi/APOPm01BVrk/hqdefault.jpg" />](https://youtu.be/WWG-9t2vF6o)
 
 **Containerize Applications** (No more writing dockerfiles)—build optimized docker images for applications without deep mastery of docker best-practices.
 - Fast - Deploy changes quickly by separating applications into multiple layers, splitting dependencies from classes.
@@ -35,5 +35,5 @@
 > - Shinto Access Token (email: mark@mrwconsulting)
 
 
-[<img src="https://img.youtube.com/vi/APOPm01BVrk/hqdefault.jpg" width="600" height="300"/>](https://youtu.be/f_XWltepAOI)
+[<img src="https://img.youtube.com/vi/APOPm01BVrk/hqdefault.jpg" />](https://youtu.be/f_XWltepAOI)
 
