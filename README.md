@@ -7,8 +7,8 @@
 - Remove dead code.
 
 > CDK CICD Pipeline supports following quality gates:
->> - Codacy  (https:www.codacy.com)
->> - Snyk (https://snyk.io/)
+>> - [Codacy](https:www.codacy.com)
+>> - [Snyk](https://snyk.io/)
 
 >>*Shinto Framework can easily be updated to support other vendor implementations like SonarQube, Shiftleft etc.*
 
@@ -17,16 +17,16 @@
 - Reproducible - Rebuilding a container image with the same contents always generates the same image. Never trigger an unnecessary update again.
 
 > CDK CICD Pipeline supports following docker image building technologies: 
->> - Cloud Native Buildpacks (https://buildpacks.io/)
->> - Google JiB (https://cloud.google.com/java/getting-started/jib)
+>> - [Cloud Native Buildpacks](https://buildpacks.io/)
+>> - [Google JiB](https://cloud.google.com/java/getting-started/jib)
 
 >>*Shinto Framework can easily be updated to support other vendor implementations*
 
 **Prerequisites**
-> - AWS CLI Version 2.11.6 or greater (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-> - Node.js Version 18.16 or greater (https://nodejs.org/en/download)
-> - Docker Version 24.0.2 or greater (https://docs.docker.com/engine/install/)
-> - AWS CDK Version 2.81.0 or greater (https://aws.amazon.com/getting-started/guides/setup-cdk/module-two/)
+> - [AWS CLI Version 2.11.6 or greater](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+> - [Node.js Version 18.16 or greater](https://nodejs.org/en/download)
+> - [Docker Version 24.0.2 or greater](https://docs.docker.com/engine/install/)
+> - [AWS CDK Version 2.81.0 or greater](https://aws.amazon.com/getting-started/guides/setup-cdk/module-two/)
 > - Shinto Access Token (email: mark@mrwconsulting)
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/1fe68a53-bdbb-4f47-97af-b775b682b2bc
