@@ -14,7 +14,7 @@
 
 >>*Shinto Framework can easily be updated to support other vendor implementations like SonarQube, Shiftleft etc.*
 
-
+[![Watch the video](https://img.youtube.com/vi/nTQUwghvy5Q/default.jpg)](https://youtu.be/f_XWltepAOI)
 
 **Containerize Applications** (No more writing dockerfiles)—build optimized docker images for applications without deep mastery of docker best-practices.
 - Fast - Deploy changes quickly by separating applications into multiple layers, splitting dependencies from classes.
