@@ -37,6 +37,13 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/546f5425-e76a-45
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/e28a80f7-a7ad-4dcf-ade1-b2edc47ed68c
 
-**Install**
+**Install Steps**
 1. Request Shinto access token (email: mark@mrwconsulting.tech)
-2. Downloadn Shinto Manager
+2. Update npmrc file with access token
+>>
+>> //npm.pkg.github.com/:_authToken="shinto access token"
+>> 
+>> @mrwconsulting:registry=https://npm.pkg.github.com/
+
+4. Install Shinto Manager (npm install @mrwconsulting/shinto-manager --global)
+5. Create git repository for samples
