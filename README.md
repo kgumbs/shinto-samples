@@ -22,7 +22,10 @@
 
 >>*Shinto Framework can easily be updated to support other vendor implementations*
 
-**prerequisites**
+**Prerequisites**
+> - AWS CLI Version 2.11.6 or greater (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+> - Node.js Version 18.16 or greater (https://nodejs.org/en/download)
+> - Docker Version 24.0.2 or greater (https://docs.docker.com/engine/install/)
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/1fe68a53-bdbb-4f47-97af-b775b682b2bc
 
