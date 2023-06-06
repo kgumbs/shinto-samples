@@ -27,6 +27,7 @@
 > - Node.js Version 18.16 or greater (https://nodejs.org/en/download)
 > - Docker Version 24.0.2 or greater (https://docs.docker.com/engine/install/)
 > - AWS CDK Version 2.81.0 or greater (https://aws.amazon.com/getting-started/guides/setup-cdk/module-two/)
+> - Shinto Access Token (email: mark@mrwconsulting)
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/1fe68a53-bdbb-4f47-97af-b775b682b2bc
 
