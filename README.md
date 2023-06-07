@@ -26,11 +26,11 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/546f5425-e76a-45
 >> - [Cloud Native Buildpacks](https://buildpacks.io/)
 >> - [Google JiB](https://cloud.google.com/java/getting-started/jib)
 
+>>*Shinto Framework can easily be updated to support other vendor implementations*
+
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/b274c79f-5ddc-4c85-8435-a95bca77904e
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/560bd935-2a3f-451c-8b3f-7f1979973a35
-
->>*Shinto Framework can easily be updated to support other vendor implementations*
 
 **Prerequisites**
 > - [AWS CLI Version 2.11.6 or greater](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
