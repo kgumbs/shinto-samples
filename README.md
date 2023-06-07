@@ -14,7 +14,7 @@
 
 >>*Shinto Framework can easily be updated to support other vendor implementations like SonarQube, Shiftleft etc.*
 
-https://github.com/mrwconsulting/shinto-samples/assets/82276384/834b423a-273c-4b06-9f4f-2c46b0e56804
+https://github.com/mrwconsulting/shinto-samples/assets/82276384/f69c277b-e9d5-4c69-8bf8-d382e69755c1
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/546f5425-e76a-4532-91b9-6f6d5e7a71a3
 
