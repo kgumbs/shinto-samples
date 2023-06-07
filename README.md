@@ -30,7 +30,7 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/546f5425-e76a-45
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/b274c79f-5ddc-4c85-8435-a95bca77904e
 
-https://github.com/mrwconsulting/shinto-samples/assets/82276384/560bd935-2a3f-451c-8b3f-7f1979973a35
+https://github.com/mrwconsulting/shinto-samples/assets/82276384/dd724622-3476-4cc8-9912-d8de5275394a
 
 **Prerequisites**
 > - [AWS CLI Version 2.11.6 or greater](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
@@ -42,8 +42,8 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/560bd935-2a3f-45
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/e28a80f7-a7ad-4dcf-ade1-b2edc47ed68c
 
 **Install Steps**
-1. Request Shinto access token (email: mark@mrwconsulting.tech)
-2. Update .npmrc file with access token
+1. Request Shinto Access Token (email: mark@mrwconsulting.tech)
+2. Update .npmrc file with Shinto Access Token
 >> <img width="521" alt="Screenshot 2023-06-06 at 2 55 41 PM" src="https://github.com/mrwconsulting/shinto-samples/assets/82276384/bd628b4d-1c24-4d6a-a9ed-3484310ea8c1">
 
 4. Install Shinto Manager (npm install @mrwconsulting/shinto-manager --global)
