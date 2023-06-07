@@ -32,7 +32,9 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/b274c79f-5ddc-4c
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/dd724622-3476-4cc8-9912-d8de5275394a
 
-**Prerequisites**
+**Installation**
+
+<ins>Prerequisites</ins>
 > - [AWS CLI Version 2.11.6 or greater](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 > - [Node.js Version 18.16 or greater](https://nodejs.org/en/download)
 > - [Docker Version 24.0.2 or greater](https://docs.docker.com/engine/install/)
@@ -41,7 +43,7 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/dd724622-3476-4c
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/e28a80f7-a7ad-4dcf-ade1-b2edc47ed68c
 
-**Install Steps**
+<ins>Steps</ins>
 1. Request Shinto Access Token (email: mark@mrwconsulting.tech)
 2. Update .npmrc file with Shinto Access Token
 >> <img width="521" alt="Screenshot 2023-06-06 at 2 55 41 PM" src="https://github.com/mrwconsulting/shinto-samples/assets/82276384/bd628b4d-1c24-4d6a-a9ed-3484310ea8c1">
