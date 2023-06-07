@@ -26,6 +26,8 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/546f5425-e76a-45
 >> - [Cloud Native Buildpacks](https://buildpacks.io/)
 >> - [Google JiB](https://cloud.google.com/java/getting-started/jib)
 
+https://github.com/mrwconsulting/shinto-samples/assets/82276384/b274c79f-5ddc-4c85-8435-a95bca77904e
+
 >>*Shinto Framework can easily be updated to support other vendor implementations*
 
 **Prerequisites**
