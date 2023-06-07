@@ -28,7 +28,7 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/546f5425-e76a-45
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/b274c79f-5ddc-4c85-8435-a95bca77904e
 
-https://github.com/mrwconsulting/shinto-samples/assets/82276384/4b77f3c2-096e-4d1f-9de5-44a4a2a7d549
+https://github.com/mrwconsulting/shinto-samples/assets/82276384/560bd935-2a3f-451c-8b3f-7f1979973a35
 
 >>*Shinto Framework can easily be updated to support other vendor implementations*
 
