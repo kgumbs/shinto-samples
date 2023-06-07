@@ -1,6 +1,6 @@
 **Shinto Framework** is an accelerator for DevOps teams for CDK-based pipelines. CICD Pipeline is the reference implementation for self-service AWS CodePipeline. Development teams submit a property file to the service to register a CDK pipeline. This will kick off the provisioning of the pipeline. In addition, pipelines will self-configure (mutate) based on different values and attributes set within a property file.
 
-![shinto-3](https://github.com/mrwconsulting/shinto-samples/assets/82276384/226cf9b9-b880-4d56-9bc2-27b3b0b16fa1)
+![shinto-3 (1)](https://github.com/mrwconsulting/shinto-samples/assets/82276384/435d736b-d94d-431f-9a6d-f8de4e72f9d9)
 
 **Quality Gates** (Code Coverage) are verifications inside the CICD pipeline to prevent code from moving forward if it doesn't meet the specified quality criteria. Some examples are below:
 
