@@ -37,6 +37,7 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/dd724622-3476-4c
 **Installation**
 
 <ins>Prerequisites</ins>
+> - [GitHub Command Line](https://cli.github.com/)
 > - [AWS CLI Version 2.11.6 or greater](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 > - [Node.js Version 18.16 or greater](https://nodejs.org/en/download)
 > - [Docker Version 24.0.2 or greater](https://docs.docker.com/engine/install/)
