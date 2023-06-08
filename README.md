@@ -57,4 +57,6 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/e28a80f7-a7ad-4d
 >> <img width="521" alt="Screenshot 2023-06-06 at 2 55 41 PM" src="https://github.com/mrwconsulting/shinto-samples/assets/82276384/bd628b4d-1c24-4d6a-a9ed-3484310ea8c1">
 
 4. Install Shinto Manager (npm install @mrwconsulting/shinto-manager --global)
+>> https://github.com/mrwconsulting/shinto-samples/assets/82276384/f365f87d-1744-4b58-b7cd-79fa878751fa
+
 5. Access AWS Console, create codestar connection to git repository
