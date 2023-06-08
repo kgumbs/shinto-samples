@@ -1,3 +1,5 @@
+Transform DevOps Team from IAC delivery (deploying "standard" template) to Platform Enablement Team.
+
 **Shinto Framework** is an accelerator for DevOps teams for CDK-based pipelines. CICD Pipeline is the reference implementation for self-service AWS CodePipeline. Development teams submit a property file to the service to register a CDK pipeline. This will kick off the provisioning of the pipeline. In addition, pipelines will self-configure (mutate) based on different values and attributes set within a property file.
 
 ![shinto-3 (6)](https://github.com/mrwconsulting/shinto-samples/assets/82276384/298c8f35-c8f2-4b46-8cbd-b6374489bc5f)
