@@ -1,4 +1,7 @@
-Transform DevOps Team from IAC delivery (deploying "standard" template) to Platform Enablement Team.
+**Transform DevOps Team** from IAC delivery (deploying "standard" template) to Platform Enablement Team. Shinto is an extensible framework, allowing platform teams to standardize CICD processes and deployments across the enterprise.
+
+- Integrates with AWS Control Customizations via Event Bridge
+- Easily add Software-as-a-Service (SaaS) vendors or new pipeline stages
 
 **Shinto Framework** is an accelerator for DevOps teams for CDK-based pipelines. CICD Pipeline is the reference implementation for self-service AWS CodePipeline. Development teams submit a property file to the service to register a CDK pipeline. This will kick off the provisioning of the pipeline. In addition, pipelines will self-configure (mutate) based on different values and attributes set within a property file.
 
