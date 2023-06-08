@@ -50,7 +50,7 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/e28a80f7-a7ad-4d
 
 <ins>Steps</ins>
 1. Request Shinto Access Token (email: mark@mrwconsulting.tech)
-2. Create git repository for shinto samples
+2. Create git repository for shinto samples (https://github.com/mrwconsulting/shinto-samples.git)
 >> https://github.com/mrwconsulting/shinto-samples/assets/82276384/0a7bc586-010e-4cee-871b-ef919f086499
 
 3. Update .npmrc file with Shinto Access Token
