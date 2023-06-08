@@ -16,7 +16,7 @@
 
 https://github.com/mrwconsulting/shinto-samples/assets/82276384/f69c277b-e9d5-4c69-8bf8-d382e69755c1
 
-https://github.com/mrwconsulting/shinto-samples/assets/82276384/546f5425-e76a-4532-91b9-6f6d5e7a71a3
+Uploading quality-gates pipeline.mp4…
 
 **Containerize Applications** (no more writing dockerfiles)—build optimized docker images for applications without deep mastery of docker best-practices.
 - Fast - Deploy changes quickly by separating applications into multiple layers, splitting dependencies from classes.
