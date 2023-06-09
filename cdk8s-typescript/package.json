@@ -1,8 +1,8 @@
 {
   "name": "cdk8s-typescript",
   "version": "1.0.0",
-  "main": "main.js",
-  "types": "main.ts",
+  "main": "index.js",
+  "types": "index.ts",
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
