@@ -19,9 +19,9 @@
 
 >>*Shinto Framework can easily be updated to support other vendor implementations like SonarQube, Shiftleft etc.*
 
-https://github.com/mrwconsulting/shinto-samples/assets/82276384/f69c277b-e9d5-4c69-8bf8-d382e69755c1
+[Generate Shinto Token](https://github.com/mrwconsulting/shinto-samples/assets/82276384/f69c277b-e9d5-4c69-8bf8-d382e69755c1)
 
-https://github.com/mrwconsulting/shinto-samples/assets/82276384/a14122b9-1487-4be7-8062-be93672eebf2
+[Pipline deployment overview](https://github.com/mrwconsulting/shinto-samples/assets/82276384/a14122b9-1487-4be7-8062-be93672eebf2)
 
 **Containerize Applications** (no more writing dockerfiles)—build optimized docker images for applications without deep mastery of docker best-practices.
 - Fast - Deploy changes quickly by separating applications into multiple layers, splitting dependencies from classes.
@@ -33,9 +33,9 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/a14122b9-1487-4b
 
 >>*Shinto Framework can easily be updated to support other vendor implementations*
 
-https://github.com/mrwconsulting/shinto-samples/assets/82276384/b274c79f-5ddc-4c85-8435-a95bca77904e
+[Sample Application Configuration Overview](https://github.com/mrwconsulting/shinto-samples/assets/82276384/b274c79f-5ddc-4c85-8435-a95bca77904e)
 
-https://github.com/mrwconsulting/shinto-samples/assets/82276384/dd724622-3476-4cc8-9912-d8de5275394a
+[Sample Application Pipeline Overview](https://github.com/mrwconsulting/shinto-samples/assets/82276384/dd724622-3476-4cc8-9912-d8de5275394a)
 
 **Installation**
 
@@ -46,18 +46,18 @@ https://github.com/mrwconsulting/shinto-samples/assets/82276384/dd724622-3476-4c
 > - [AWS CDK Version 2.81.0 or greater](https://aws.amazon.com/getting-started/guides/setup-cdk/module-two/)
 > - Shinto Access Token (email: mark@mrwconsulting)
 
-https://github.com/mrwconsulting/shinto-samples/assets/82276384/e28a80f7-a7ad-4dcf-ade1-b2edc47ed68c
+[Verify prerequisites](https://github.com/mrwconsulting/shinto-samples/assets/82276384/e28a80f7-a7ad-4dcf-ade1-b2edc47ed68c)
 
 <ins>Steps</ins>
 1. Request Shinto Access Token (email: mark@mrwconsulting.tech)
 2. Create git repository for shinto samples (https://github.com/mrwconsulting/shinto-samples.git)
->> https://github.com/mrwconsulting/shinto-samples/assets/82276384/0a7bc586-010e-4cee-871b-ef919f086499
+>> [How-To create repo and clone samples](https://github.com/mrwconsulting/shinto-samples/assets/82276384/0a7bc586-010e-4cee-871b-ef919f086499)
 
 3. Update .npmrc file with Shinto Access Token
 >> <img width="521" src="https://github.com/mrwconsulting/shinto-samples/assets/82276384/bd628b4d-1c24-4d6a-a9ed-3484310ea8c1">
 
 4. Install Shinto Manager (npm install @mrwconsulting/shinto-manager --global)
->> https://github.com/mrwconsulting/shinto-samples/assets/82276384/63528b99-b2d0-42e6-a077-4bf7e02d9071
+>>[How-To install shinto-manager detials](https://github.com/mrwconsulting/shinto-samples/assets/82276384/63528b99-b2d0-42e6-a077-4bf7e02d9071)
 
 5. Access AWS Console, create codestar connection to git repository
->> https://github.com/mrwconsulting/shinto-samples/assets/82276384/1a5575dd-399f-4ddd-9224-41fdfaa0a194
+>> [How-To setup CodeStart Connection](https://github.com/mrwconsulting/shinto-samples/assets/82276384/1a5575dd-399f-4ddd-9224-41fdfaa0a194)
