@@ -1,14 +1,12 @@
 {
     "metadata": {
       "DEBUG": "false",
-      "PROJECT_WORKSPACE": "cdk-typescript",
-      "ARTIFACT_OUTPUT": "false",
-      "ARTIFACT_OUTPUT_DESTINATION": "build",
+      "PROJECT_WORKSPACE": "cdk-python",
       "COMPUTE_TYPE": "SMALL"
     },
     "label": {
       "customer": "mrwconsulting",
-      "project": "cdk-typescript"
+      "project": "cdk-python"
     },
     "git": {
       "owner": "mrwconsulting",
@@ -17,13 +15,13 @@
       "codeStarId": "5e624f25-90dd-4557-b2e5-95918ad47bbc"
     },
     "buildSpec": {
-      "type": "TYPESCRIPT",
-      "packageManager": "NPM",
+      "type": "PYTHON",
+      "packageManager": "PIP",
       "codeScanType": ["CODACY","SNYK"]
     },
     "deploy":{
       "type": "CDK",
-      "enabled": true,
+      "enabled": false,
       "global": {
         "region": ["us-east-1"],
         "approval": true
@@ -31,7 +29,7 @@
       "stage" : [
         {
           "target": "DEV",
-          "account": "xxxxxxxxxxx"
+          "account": "xxxxxxxxxxxx"
         }
       ]
     }

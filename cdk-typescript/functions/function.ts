@@ -6,7 +6,6 @@ const dynamo = new DynamoDB.DocumentClient();
 const TABLE_NAME: string = process.env.HELLO_TABLE_NAME!;
 
 export const handler: Handler = async (event, context) => {
-
   const method = event.requestContext.http.method;
 
   if (method === 'GET') {
@@ -23,7 +22,6 @@ export const handler: Handler = async (event, context) => {
 
 async function save(event: any) {
   const name = event.queryStringParameters.name;
-
   const item = {
     name: name,
     date: Date.now(),
@@ -40,12 +38,10 @@ async function save(event: any) {
 
 async function getHello(event: any) {
   const name = event.queryStringParameters.name;
-
   const item = await getItem(name);
 
   if (item !== undefined && item.date) {
     const d = new Date(item.date);
-
     const message = `Was greeted on ${d.getDate()}/${d.getMonth() + 1
       }/${d.getFullYear()}`;
 
@@ -55,7 +51,6 @@ async function getHello(event: any) {
     };
 
   } else {
-
     const message = "Nobody was greeted with that name";
     return {
       statusCode: 200,
@@ -65,7 +60,6 @@ async function getHello(event: any) {
 };
 
 async function getItem(name: string) {
-
   const params: DynamoDB.DocumentClient.GetItemInput = {
     Key: {
       name: name,
