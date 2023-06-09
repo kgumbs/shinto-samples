@@ -6,6 +6,7 @@
 .venv
 *.js
 *.d.ts
+__snapshots__
 
 build
 dist
