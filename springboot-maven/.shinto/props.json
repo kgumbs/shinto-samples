@@ -37,12 +37,15 @@
     "enabled": true,
     "global": {
       "region": ["us-east-1"],
-      "approval": true
+      "approval": true,
+      "env": {
+        "PACKAGE_MANAGER": "NPM"
+      }
     },
     "stage": [
       {
         "target": "DEV",
-        "account": "570602336658"
+        "account": "xxxxxxxxxxxxxxxx"
       }
     ]
   }
