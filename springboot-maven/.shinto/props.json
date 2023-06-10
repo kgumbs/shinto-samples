@@ -19,7 +19,7 @@
   "buildSpec": {
     "type": "JAVA",
     "packageManager": "MAVEN",
-    "codeScanType": ["CODACY","SNYK"],
+    "codeScanType": [],
     "env": {
       "PACKAGE_WRAPPER_ENABLED": "true"
     }
@@ -27,7 +27,7 @@
   "imageBuilder": {
     "type": "BUILDPACK",
     "enabled": true,
-    "imageScanType": ["ECR","SNYK"],
+    "imageScanType": [],
     "env": {
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
