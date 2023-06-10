@@ -41,5 +41,5 @@ export class Chart extends cdk8s.Chart {
 }
 
 const app = new cdk8s.App();
-new Chart(app, 'springboot-k8s');
+new Chart(app, 'springboot-chart');
 app.synth();
