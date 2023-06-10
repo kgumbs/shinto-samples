@@ -22,14 +22,28 @@
     "codeScanType": ["CODACY","SNYK"],
     "env": {
       "PACKAGE_WRAPPER_ENABLED": "true"
-    }
-  },
-  "imageBuilder": {
-    "type": "BUILDPACK",
-    "enabled": true,
-    "imageScanType": ["ECR","SNYK"],
-    "env": {
-      "IMAGESCAN_FINDINGS_DISABLED": "true"
+    },
+    "imageBuilder": {
+      "type": "BUILDPACK",
+      "enabled": true,
+      "imageScanType": ["ECR","SNYK"],
+      "env": {
+        "IMAGESCAN_FINDINGS_DISABLED": "true"
+      }
+    },
+    "deploy": {
+      "type": "CDK8S",
+      "enabled": true,
+      "global": {
+        "region": ["us-east-1"],
+        "approval": true
+      },
+      "stage": [
+        {
+          "target": "DEV",
+          "account": "xxxxxxxxxxxx"
+        }
+      ]
     }
   }
 }
