@@ -5,7 +5,9 @@ import { KubeDeployment, KubeService, IntOrString } from './imports/k8s';
 
 export class Chart extends cdk8s.Chart {
   constructor(scope: Construct, id: string) {
-    super(scope, id);
+    super(scope, id, {
+      namespace: 'springboot'
+    });
 
     const label = { app: 'springboot-k8s' };
 
