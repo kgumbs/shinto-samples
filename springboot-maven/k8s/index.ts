@@ -1,13 +1,13 @@
 import { Construct } from 'constructs';
-import { App, Chart } from 'cdk8s';
+import * as cdk8s from 'cdk8s';
 
 import { KubeDeployment, KubeService, IntOrString } from './imports/k8s';
 
-export class CDK8SChart extends Chart {
+export class Chart extends cdk8s.Chart {
   constructor(scope: Construct, id: string) {
     super(scope, id);
 
-    const label = { app: 'cdk8s-typescript' };
+    const label = { app: 'springboot-k8s' };
 
     new KubeService(this, 'service', {
       spec: {
@@ -28,7 +28,7 @@ export class CDK8SChart extends Chart {
           spec: {
             containers: [
               {
-                name: 'cdk8s-typescript',
+                name: 'springboot-k8s',
                 image: `${process.env.TARGET_REPOSITORY}:${process.env.TARGET_IMAGE_TAG}`,
                 ports: [{ containerPort: 8080 }]
               }
@@ -40,6 +40,6 @@ export class CDK8SChart extends Chart {
   }
 }
 
-const app = new App();
-new CDK8SChart(app, 'cdk8s-typescript');
+const app = new cdk8s.App();
+new Chart(app, 'springboot-k8s');
 app.synth();

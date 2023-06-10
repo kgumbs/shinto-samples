@@ -1,10 +1,10 @@
 import {Testing} from 'cdk8s';
-import { CDK8SChart } from './index';
+import { Chart } from './index';
 
 describe('cdk8s', () => {
   test('charts', () => {
     const app = Testing.app();
-    const chart = new CDK8SChart(app, 'CDK8SChart');
+    const chart = new Chart(app, 'springboot-chart');
     const results = Testing.synth(chart)
     expect(results).toMatchSnapshot();
   });
