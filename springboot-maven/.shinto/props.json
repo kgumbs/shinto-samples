@@ -34,7 +34,7 @@
   },
   "deploy": {
     "type": "CDK8S",
-    "enabled": false,
+    "enabled": true,
     "global": {
       "region": ["us-east-1"],
       "approval": true,
@@ -45,7 +45,7 @@
     "stage": [
       {
         "target": "DEV",
-        "account": "xxxxxxxxxxxxxxx"
+        "account": "570602336658"
       }
     ]
   }
