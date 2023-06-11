@@ -38,6 +38,7 @@
     "global": {
       "region": ["us-east-1"],
       "approval": true,
+      "clusterName": "shinto",
       "env": {
         "PACKAGE_MANAGER": "NPM"
       }
