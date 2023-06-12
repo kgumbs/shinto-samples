@@ -32,7 +32,7 @@
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
   },
-  "deploy": {
+  "deployment": {
     "type": "CDK8S",
     "enabled": true,
     "global": {
@@ -46,7 +46,7 @@
     "stage": [
       {
         "target": "DEV",
-        "account": "570602336658"
+        "account": "xxxxxxxxxxxxxxx"
       }
     ]
   }
