@@ -34,9 +34,9 @@
   },
   "deploy": {
     "type": "CDK8S",
-    "enabled": false,
+    "enabled": true,
     "global": {
-      "region": ["us-east-1"],
+      "region": ["us-west-2"],
       "approval": true,
       "clusterName": "shinto",
       "env": {
@@ -46,7 +46,7 @@
     "stage": [
       {
         "target": "DEV",
-        "account": "xxxxxxxxxxxxxxx"
+        "account": "570602336658"
       }
     ]
   }
