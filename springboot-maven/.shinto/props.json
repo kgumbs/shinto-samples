@@ -34,7 +34,7 @@
   },
   "deploy": {
     "type": "CDK8S",
-    "enabled": false,
+    "enabled": true,
     "global": {
       "region": ["us-west-2"],
       "approval": true,
