@@ -19,7 +19,7 @@
       "packageManager": "MAVEN",
       "codeScanType": ["CODACY","SNYK"]
     },
-    "deploy":{
+    "deployment":{
       "type": "CDK",
       "enabled": false,
       "global": {
