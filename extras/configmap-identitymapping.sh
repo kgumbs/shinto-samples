@@ -8,8 +8,8 @@ fi
 
 DEFAULT_ANSWER='n'
 DEFAULT_REGION='us-east-1'
-ROLENAME='shinto-deployment'
-USERNAME='shinto-deployment'
+ROLENAME='shinto-deploy'
+USERNAME='shinto-deploy'
 TRUST_POLICY=$(echo '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"Service":"codebuild.amazonaws.com"},"Action":"sts:AssumeRole"}]}')
 EXECUTION_POLICY=$(echo '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Action":"eks:DescribeCluster","Resource":"*"}]}')
 
@@ -28,7 +28,7 @@ if [ ! -z "${TARGET_REGION:-}" ] && [ ! -z "${TARGET_CLUSTERNAME:-}" ]; then
 
     if [ -z "${PROFILE:-}" ]; then
         ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" | jq -r ".Role.Arn" )
-        aws iam put-role-policy --role-name ${ROLENAME} --policy-name deployment --policy-document "${EXECUTION_POLICY}"
+        aws iam put-role-policy --role-name ${ROLENAME} --policy-name deploy --policy-document "${EXECUTION_POLICY}"
         if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
             eksctl create cluster --name ${TARGET_CLUSTERNAME} --region ${TARGET_REGION} --fargate
         fi
@@ -37,7 +37,7 @@ if [ ! -z "${TARGET_REGION:-}" ] && [ ! -z "${TARGET_CLUSTERNAME:-}" ]; then
     else
         echo "PROFILE: ${PROFILE}"
         ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" --profile ${PROFILE} | jq -r ".Role.Arn" )
-        aws iam put-role-policy --role-name ${ROLENAME} --policy-name deployment --policy-document "${EXECUTION_POLICY}" --profile ${PROFILE}
+        aws iam put-role-policy --role-name ${ROLENAME} --policy-name deploy --policy-document "${EXECUTION_POLICY}" --profile ${PROFILE}
         if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
             eksctl create cluster --name ${TARGET_CLUSTERNAME} --region ${TARGET_REGION} --fargate --profile ${PROFILE}
         fi

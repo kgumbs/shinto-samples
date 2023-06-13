@@ -32,7 +32,7 @@
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
   },
-  "deployment": {
+  "deploy": {
     "type": "CDK8S",
     "enabled": true,
     "global": {

@@ -19,7 +19,7 @@
       "packageManager": "PIP",
       "codeScanType": ["CODACY","SNYK"]
     },
-    "deployment":{
+    "deploy":{
       "type": "CDK",
       "enabled": false,
       "global": {
