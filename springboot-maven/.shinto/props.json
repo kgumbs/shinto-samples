@@ -4,7 +4,8 @@
     "PROJECT_WORKSPACE": "springboot-maven",
     "ARTIFACT_OUTPUT": "true",
     "ARTIFACT_OUTPUT_DESTINATION": "target",
-    "COMPUTE_TYPE": "SMALL"
+    "COMPUTE_TYPE": "SMALL",
+    "REMOVAL_POLICY": "DESTROY"
   },
   "label": {
     "customer": "mrwconsulting",
