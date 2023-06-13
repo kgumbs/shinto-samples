@@ -6,10 +6,10 @@ if [ "${DEBUG}" == "true" ]; then
     set -x
 fi
 
+DEFAULT_ANSWER='n'
+DEFAULT_REGION='us-east-1'
 ROLENAME='shinto-deployment'
 USERNAME='shinto-deployment'
-DEFAULT_REGION='us-east-1'
-DEFAULT_ANSWER='n'
 TRUST_POLICY=$(echo '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"Service":"codebuild.amazonaws.com"},"Action":"sts:AssumeRole"}]}')
 EXECUTION_POLICY=$(echo '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Action":"eks:DescribeCluster","Resource":"*"}]}')
 
