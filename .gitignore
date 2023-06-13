@@ -6,6 +6,8 @@
 .venv
 *.js
 *.d.ts
+__snapshots__
+!jest.config.js
 
 build
 dist

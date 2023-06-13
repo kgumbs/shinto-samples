@@ -1,0 +1,4 @@
+language: typescript
+app: npx ts-node index.ts
+imports:
+  - k8s@2.7.77

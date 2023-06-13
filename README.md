@@ -5,7 +5,7 @@
 
 **Shinto Framework** is an accelerator for DevOps teams for CDK-based pipelines. CICD Pipeline is the reference implementation for self-service AWS CodePipeline. Development teams submit a property file to the service to register a CDK pipeline. This will kick off the provisioning of the pipeline. In addition, pipelines will self-configure (mutate) based on different values and attributes set within a property file.
 
-![shinto-3 (6)](https://github.com/mrwconsulting/shinto-samples/assets/82276384/298c8f35-c8f2-4b46-8cbd-b6374489bc5f)
+![architecture diagram](https://github.com/mrwconsulting/shinto-samples/assets/82276384/298c8f35-c8f2-4b46-8cbd-b6374489bc5f)
 
 **Quality Gates** (Code Coverage) are verifications inside the CICD pipeline to prevent code from moving forward if it doesn't meet the specified quality criteria. Some examples are below:
 
@@ -57,7 +57,7 @@
 >> <img width="521" src="https://github.com/mrwconsulting/shinto-samples/assets/82276384/bd628b4d-1c24-4d6a-a9ed-3484310ea8c1">
 
 4. Install Shinto Manager (npm install @mrwconsulting/shinto-manager --global)
->>[How-To install shinto-manager detials](https://github.com/mrwconsulting/shinto-samples/assets/82276384/63528b99-b2d0-42e6-a077-4bf7e02d9071)
+>>[How-To install shinto-manager details](https://github.com/mrwconsulting/shinto-samples/assets/82276384/63528b99-b2d0-42e6-a077-4bf7e02d9071)
 
 5. Access AWS Console, create codestar connection to git repository
 >> [How-To setup CodeStart Connection](https://github.com/mrwconsulting/shinto-samples/assets/82276384/1a5575dd-399f-4ddd-9224-41fdfaa0a194)

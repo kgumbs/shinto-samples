@@ -19,7 +19,7 @@
   "buildSpec": {
     "type": "JAVA",
     "packageManager": "MAVEN",
-    "codeScanType": ["CODACY","SNYK"],
+    "codeScanType": [],
     "env": {
       "PACKAGE_WRAPPER_ENABLED": "true"
     }
@@ -27,9 +27,27 @@
   "imageBuilder": {
     "type": "BUILDPACK",
     "enabled": true,
-    "imageScanType": ["ECR","SNYK"],
+    "imageScanType": [],
     "env": {
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
+  },
+  "deployment": {
+    "type": "CDK8S",
+    "enabled": true,
+    "global": {
+      "region": ["us-west-2"],
+      "approval": true,
+      "clusterName": "shinto",
+      "env": {
+        "PACKAGE_MANAGER": "NPM"
+      }
+    },
+    "stage": [
+      {
+        "target": "DEV",
+        "account": "xxxxxxxxxxxxxxx"
+      }
+    ]
   }
 }
