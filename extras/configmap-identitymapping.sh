@@ -27,7 +27,13 @@ if [ ! -z "${TARGET_REGION:-}" ] && [ ! -z "${TARGET_CLUSTERNAME:-}" ]; then
     ANSWER="${ANSWER:-$DEFAULT_ANSWER}"
 
     if [ -z "${PROFILE:-}" ]; then
-        ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" | jq -r ".Role.Arn" )
+        read -e -p  "Create role [y/N]: " ANSWER
+        ANSWER="${ANSWER:-$DEFAULT_ANSWER}"
+        if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
+            ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" | jq -r ".Role.Arn" )
+        else
+            ROLE_ARN=$(aws iam get-role --role-name ${ROLENAME} | jq -r ".Role.Arn" ) 
+        fi
         aws iam put-role-policy --role-name ${ROLENAME} --policy-name deploy --policy-document "${EXECUTION_POLICY}"
         if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
             eksctl create cluster --name ${TARGET_CLUSTERNAME} --region ${TARGET_REGION} --fargate
@@ -36,7 +42,13 @@ if [ ! -z "${TARGET_REGION:-}" ] && [ ! -z "${TARGET_CLUSTERNAME:-}" ]; then
             --group "system:masters" --arn ${ROLE_ARN} --username ${USERNAME} --no-duplicate-arns
     else
         echo "PROFILE: ${PROFILE}"
-        ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" --profile ${PROFILE} | jq -r ".Role.Arn" )
+        read -e -p  "Create role [y/N]: " ANSWER
+        ANSWER="${ANSWER:-$DEFAULT_ANSWER}"
+        if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
+            ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" --profile ${PROFILE} | jq -r ".Role.Arn" )
+        else
+            ROLE_ARN=$(aws iam get-role --role-name ${ROLENAME} --profile ${PROFILE} | jq -r ".Role.Arn" ) 
+        fi
         aws iam put-role-policy --role-name ${ROLENAME} --policy-name deploy --policy-document "${EXECUTION_POLICY}" --profile ${PROFILE}
         if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
             eksctl create cluster --name ${TARGET_CLUSTERNAME} --region ${TARGET_REGION} --fargate --profile ${PROFILE}
