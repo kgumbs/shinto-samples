@@ -37,6 +37,7 @@ if [ ! -z "${TARGET_REGION:-}" ] && [ ! -z "${TARGET_CLUSTERNAME:-}" ]; then
     else
         echo "PROFILE: ${PROFILE}"
         ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" --profile ${PROFILE} | jq -r ".Role.Arn" )
+        aws iam put-role-policy --role-name ${ROLENAME} --policy-name deployment --policy-document "${EXECUTION_POLICY}" --profile ${PROFILE}
         if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
             eksctl create cluster --name ${TARGET_CLUSTERNAME} --region ${TARGET_REGION} --fargate --profile ${PROFILE}
         fi
