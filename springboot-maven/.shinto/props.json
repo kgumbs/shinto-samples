@@ -3,8 +3,9 @@
     "DEBUG": "false",
     "PROJECT_WORKSPACE": "springboot-maven",
     "ARTIFACT_OUTPUT": "true",
-    "ARTIFACT_OUTPUT_DESTINATION": "springboot-maven/target",
-    "COMPUTE_TYPE": "SMALL"
+    "ARTIFACT_OUTPUT_DESTINATION": "target",
+    "COMPUTE_TYPE": "SMALL",
+    "REMOVAL_POLICY": "DESTROY"
   },
   "label": {
     "customer": "cayi",
@@ -32,7 +33,7 @@
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
   },
-  "deployment": {
+  "deploy": {
     "type": "CDK8S",
     "enabled": true,
     "global": {

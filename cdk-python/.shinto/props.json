@@ -2,7 +2,8 @@
     "metadata": {
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "cdk-python",
-      "COMPUTE_TYPE": "SMALL"
+      "COMPUTE_TYPE": "SMALL",
+      "REMOVAL_POLICY": "DESTROY"
     },
     "label": {
       "customer": "mrwconsulting",

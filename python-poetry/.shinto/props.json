@@ -2,7 +2,8 @@
     "metadata": {
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "python-poetry",
-      "BUILDPACK_BUILDER": "paketobuildpacks/builder:base"
+      "BUILDPACK_BUILDER": "paketobuildpacks/builder:base",
+      "REMOVAL_POLICY": "DESTROY"
     },
     "label": {
       "customer": "cayi",

@@ -3,7 +3,8 @@
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "jib-gradle",
       "ARTIFACT_OUTPUT": "true",
-      "ARTIFACT_OUTPUT_DESTINATION": "build"
+      "ARTIFACT_OUTPUT_DESTINATION": "build",
+      "REMOVAL_POLICY": "DESTROY"
     },
     "label": {
       "customer": "mrwconsulting",

@@ -6,11 +6,12 @@ if [ "${DEBUG}" == "true" ]; then
     set -x
 fi
 
-ROLENAME='shinto-deployment'
-USERNAME='shinto-deployment'
-DEFAULT_REGION='us-east-1'
 DEFAULT_ANSWER='n'
+DEFAULT_REGION='us-east-1'
+ROLENAME='shinto-deploy'
+USERNAME='shinto-deploy'
 TRUST_POLICY=$(echo '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"Service":"codebuild.amazonaws.com"},"Action":"sts:AssumeRole"}]}')
+EXECUTION_POLICY=$(echo '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Action":"eks:DescribeCluster","Resource":"*"}]}')
 
 while getopts ":p:" arg; do
     case $arg in
@@ -26,7 +27,14 @@ if [ ! -z "${TARGET_REGION:-}" ] && [ ! -z "${TARGET_CLUSTERNAME:-}" ]; then
     ANSWER="${ANSWER:-$DEFAULT_ANSWER}"
 
     if [ -z "${PROFILE:-}" ]; then
-        ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" | jq -r ".Role.Arn" )
+        read -e -p  "Create role [y/N]: " ANSWER
+        ANSWER="${ANSWER:-$DEFAULT_ANSWER}"
+        if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
+            ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" | jq -r ".Role.Arn" )
+        else
+            ROLE_ARN=$(aws iam get-role --role-name ${ROLENAME} | jq -r ".Role.Arn" ) 
+        fi
+        aws iam put-role-policy --role-name ${ROLENAME} --policy-name deploy --policy-document "${EXECUTION_POLICY}"
         if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
             eksctl create cluster --name ${TARGET_CLUSTERNAME} --region ${TARGET_REGION} --fargate
         fi
@@ -34,7 +42,14 @@ if [ ! -z "${TARGET_REGION:-}" ] && [ ! -z "${TARGET_CLUSTERNAME:-}" ]; then
             --group "system:masters" --arn ${ROLE_ARN} --username ${USERNAME} --no-duplicate-arns
     else
         echo "PROFILE: ${PROFILE}"
-        ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" --profile ${PROFILE} | jq -r ".Role.Arn" )
+        read -e -p  "Create role [y/N]: " ANSWER
+        ANSWER="${ANSWER:-$DEFAULT_ANSWER}"
+        if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
+            ROLE_ARN=$(aws iam create-role --role-name ${ROLENAME} --assume-role-policy-document "${TRUST_POLICY}" --profile ${PROFILE} | jq -r ".Role.Arn" )
+        else
+            ROLE_ARN=$(aws iam get-role --role-name ${ROLENAME} --profile ${PROFILE} | jq -r ".Role.Arn" ) 
+        fi
+        aws iam put-role-policy --role-name ${ROLENAME} --policy-name deploy --policy-document "${EXECUTION_POLICY}" --profile ${PROFILE}
         if [ "${ANSWER}" == "y" ] || [ "${ANSWER}" == "Y" ]; then
             eksctl create cluster --name ${TARGET_CLUSTERNAME} --region ${TARGET_REGION} --fargate --profile ${PROFILE}
         fi

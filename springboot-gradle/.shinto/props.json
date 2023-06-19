@@ -4,7 +4,8 @@
       "PROJECT_WORKSPACE": "springboot-gradle",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "build",
-      "COMPUTE_TYPE": "SMALL"
+      "COMPUTE_TYPE": "SMALL",
+      "REMOVAL_POLICY": "DESTROY"
     },
     "label": {
       "customer": "cayi",
