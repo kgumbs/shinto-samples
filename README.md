@@ -6,7 +6,7 @@ Shinto CDK CICD Platform
 - Integrates with AWS Control Customizations via Event Bridge
 - Easily add Software-as-a-Service (SaaS) vendors or new pipeline stages
 
-**Shinto Framework** is an accelerator for DevOps teams for CDK-based pipelines. CICD Pipeline is the reference implementation for self-service AWS CodePipeline. Development teams submit a property file to the service to register a CDK pipeline. This will kick off the provisioning of the pipeline. In addition, pipelines will self-configure (mutate) based on different values and attributes set within a property file.
+**Shinto Framework** is an accelerator for DevOps teams for CDK-based pipelines. CICD Pipeline is the reference implementation for self-service AWS CodePipeline. Development teams submit a property file to the service to register a CDK pipeline. This will kick off the creation of the pipeline. In addition, pipeline will self-configure (mutate) based on different values and attributes set within a property file.
 
 ![architecture diagram](https://github.com/mrwconsulting/shinto-samples/assets/82276384/298c8f35-c8f2-4b46-8cbd-b6374489bc5f)
 
