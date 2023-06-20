@@ -6,4 +6,11 @@ author:
 
 url: https://mrwconsulting.github.io/shinto-samples/
 markdown: kramdown
-show_downloads: true
+
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
