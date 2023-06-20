@@ -1,12 +1,3 @@
-title: Shinto CICD Platform
-description: Shinto is an extensible framework, allowing platform teams to standardize CICD processes and deployments across the enterprise.
-author:
-  name: Mark Washburn
-  email: mark@mrwconsulting.tech
-
-url: https://mrwconsulting.github.io/shinto-samples/
-markdown: kramdown
-
 plugins:
   - jekyll-relative-links
 relative_links:
