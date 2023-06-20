@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 Shinto CDK CICD Platform
 =============
 
