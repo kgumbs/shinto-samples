@@ -3,6 +3,7 @@ description: Shinto is an extensible framework, allowing platform teams to stand
 author:
   name: Mark Washburn
   email: mark@mrwconsulting.tech
+
+url: https://mrwconsulting.github.io/shinto-samples/
+markdown: kramdown
 show_downloads: true
-google_analytics:
-theme: jekyll-theme-slate
