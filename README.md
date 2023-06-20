@@ -1,8 +1,5 @@
----
-layout: page
-title: "Shinto CDK CICD Platform"
----
-<meta name="google-site-verification" content="9zMIP1g91TP7a2yMF7jNLrDcTOuxi2vmrWx6V4hV2ZQ" />
+Shinto CDK CICD Platform
+=============
 
 **Transform DevOps Team** from IAC delivery (deploying "standard" template) to Platform Enablement Team. Shinto is an extensible framework, allowing platform teams to standardize CICD processes and deployments across the enterprise.
 
