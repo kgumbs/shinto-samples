@@ -1,4 +1,6 @@
-readme_index:
-  enabled:          true
-  remove_originals: false
-  with_frontmatter: false
+defaults:
+  - 
+    scope:
+      path: "README.md"
+    values:
+      permalink: "README.html"
