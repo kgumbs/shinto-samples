@@ -1,0 +1,5 @@
+title: Shinto CICD Platform
+description: Shinto is an extensible framework, allowing platform teams to standardize CICD processes and deployments across the enterprise.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-slate
