@@ -1,8 +1,4 @@
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - README.md
-markdown: kramdown
+readme_index:
+  enabled:          true
+  remove_originals: false
+  with_frontmatter: false
