@@ -20,7 +20,7 @@ Shinto CDK CICD Platform
 >> - [Codacy](https:www.codacy.com)
 >> - [Snyk](https://snyk.io/)
 
->>*Shinto Framework can easily be updated to support other vendor implementations like SonarQube, Shiftleft etc.*
+>>*Shinto Framework can easily be updated to support other vendor implementations*
 
 [Generate Shinto Token](https://github.com/mrwconsulting/shinto-samples/assets/82276384/f69c277b-e9d5-4c69-8bf8-d382e69755c1)
 
