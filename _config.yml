@@ -4,12 +4,7 @@ layout: default
 title: Shinto CDK CICD Platform
 jekyll_compose:
   post_default_front_matter:
-    last_modified_at: 
-    permalink: 
-    description:
-    image:
     published: true
     sitemap: true
-    categories:
     tags:
-      - mark
+      - marktag
