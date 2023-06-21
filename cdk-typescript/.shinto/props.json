@@ -8,14 +8,14 @@
       "REMOVAL_POLICY": "DESTROY"
     },
     "label": {
-      "customer": "mrwconsulting",
+      "customer": "cayi",
       "project": "cdk-typescript"
     },
     "git": {
-      "owner": "mrwconsulting",
+      "owner": "kgumbs",
       "branch": "main",
       "repository": "shinto-samples",
-      "codeStarId": "e196c5a3-4efd-4f35-98fe-16b3f6f65e6b"
+      "codeStarId": "a16d91c5-2dd3-4ee4-89f9-4d5865c0a45c"
     },
     "buildSpec": {
       "type": "TYPESCRIPT",
@@ -32,7 +32,7 @@
       "stage" : [
         {
           "target": "DEV",
-          "account": "xxxxxxxxxxx"
+          "account": "340717391351"
         }
       ]
     }
