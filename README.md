@@ -1,3 +1,8 @@
+---
+layout: post
+title: Shinto CDK CICD Platform
+---
+
 Shinto CDK CICD Platform
 =============
 
