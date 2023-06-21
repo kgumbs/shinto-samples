@@ -1,14 +1,3 @@
----
-layout: default
-title: Shinto CDK CICD Platform
-tags:
-  - platform
-  - aws
-  - pipeline
-  - cicd
-  - codepipeline
----
-
 Shinto CDK CICD Platform
 =============
 
