@@ -9,11 +9,11 @@
       "customer": "mrwconsulting",
       "project": "python-pip"
     },
-    "git": {
+    "codestar": {
+      "id": "e196c5a3-4efd-4f35-98fe-16b3f6f65e6b",
       "owner": "mrwconsulting",
       "branch": "main",
-      "repository": "shinto-samples",
-      "codeStarId": "e196c5a3-4efd-4f35-98fe-16b3f6f65e6b"
+      "repository": "shinto-samples"
     },
     "buildSpec": {
       "type": "PYTHON",
