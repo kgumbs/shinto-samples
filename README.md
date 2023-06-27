@@ -1,9 +1,21 @@
+Shinto CDK CICD Platform
+=============
+
 **Transform DevOps Team** from IAC delivery (deploying "standard" template) to Platform Enablement Team. Shinto is an extensible framework, allowing platform teams to standardize CICD processes and deployments across the enterprise.
 
 - Integrates with AWS Control Customizations via Event Bridge
 - Easily add Software-as-a-Service (SaaS) vendors or new pipeline stages
 
-**Shinto Framework** is an accelerator for DevOps teams for CDK-based pipelines. CICD Pipeline is the reference implementation for self-service AWS CodePipeline. Development teams submit a property file to the service to register a CDK pipeline. This will kick off the provisioning of the pipeline. In addition, pipelines will self-configure (mutate) based on different values and attributes set within a property file.
+**The Shinto Advantage**
+- Fully automated CI/CD
+- Accelerate delivery 
+- Reduce negative impacts of manual scripting
+- Repeatable consistent deployments across multiple environments
+- Turnkey application packaging 
+- Integrated Quality and Security Scans
+- Simplified Disaster Recovery
+  
+**Shinto Framework** is an accelerator for DevOps teams for CDK-based pipelines. CICD Pipeline is the reference implementation for self-service AWS CodePipeline. Development teams submit a property file to the service to register a CDK pipeline. This will kick off the creation of the pipeline. In addition, pipeline will self-configure (mutate) based on different values and attributes set within a property file.
 
 ![architecture diagram](https://github.com/mrwconsulting/shinto-samples/assets/82276384/298c8f35-c8f2-4b46-8cbd-b6374489bc5f)
 
@@ -17,7 +29,7 @@
 >> - [Codacy](https:www.codacy.com)
 >> - [Snyk](https://snyk.io/)
 
->>*Shinto Framework can easily be updated to support other vendor implementations like SonarQube, Shiftleft etc.*
+>>*Shinto Framework can easily be updated to support other vendor implementations*
 
 [Generate Shinto Token](https://github.com/mrwconsulting/shinto-samples/assets/82276384/f69c277b-e9d5-4c69-8bf8-d382e69755c1)
 
