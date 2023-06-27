@@ -32,23 +32,24 @@
     "env": {
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
-  },
-  "deploy": {
-    "type": "CDK8S",
-    "enabled": true,
-    "global": {
-      "region": ["us-west-2"],
-      "approval": true,
-      "clusterName": "shinto",
-      "env": {
-        "PACKAGE_MANAGER": "NPM"
-      }
-    },
-    "stage": [
-      {
-        "target": "DEV",
-        "account": "xxxxxxxxxxxxxxx"
-      }
-    ]
   }
+  // ,
+  // "deploy": {
+  //   "type": "CDK8S",
+  //   "enabled": true,
+  //   "global": {
+  //     "region": ["us-west-2"],
+  //     "approval": true,
+  //     "clusterName": "shinto",
+  //     "env": {
+  //       "PACKAGE_MANAGER": "NPM"
+  //     }
+  //   },
+  //   "stage": [
+  //     {
+  //       "target": "DEV",
+  //       "account": "xxxxxxxxxxxxxxx"
+  //     }
+  //   ]
+  // }
 }
