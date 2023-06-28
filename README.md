@@ -43,7 +43,7 @@ Shinto CDK CICD Platform
 6. Install Shinto Platform
    ```
     > cd shinto-samples/extras
-    > [update install.json with you account specfic information]
+    > [update install.json with you account specific information]
     > shinto-manager install --profile shinto-manager
     
    ```
