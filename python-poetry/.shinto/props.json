@@ -10,10 +10,10 @@
       "project": "python-poetry"
     },
     "codestar": {
-      "id": "e196c5a3-4efd-4f35-98fe-16b3f6f65e6b",
+      "id": "29d2e797-b54f-43c0-99b4-be4b9f3d7f32",
       "owner": "mrwconsulting",
       "branch": "main",
-      "repository": "shinto-samples"
+      "repository": "shinto-demo"
     },
     "buildSpec": {
       "type": "PYTHON",
@@ -28,5 +28,21 @@
         "IMAGESCAN_FINDINGS_DISABLED": "true",
         "BUILDPACK_PACK": "paketo-buildpacks/python"
       }
+    },
+    "deploy": {
+      "type": "MANIFEST",
+      "enabled": true,
+      "global": {
+        "region": ["us-west-1"],
+        "approval": true,
+        "clusterName": "shinto"
+      },
+      "stage": [
+        {
+          "target": "DEV",
+          "account": "xxxxxxxxxxxxxx",
+          "approval": false
+        }
+      ]
     }
 }
