@@ -30,9 +30,10 @@
       },
       "stage" : [
         {
+          "approval": false,
           "target": "DEV",
           "account": "xxxxxxxxxxxxx",
-          "approval": false
+          "region": ["us-east-1","us-west-1"]
         }
       ]
     }

@@ -40,9 +40,9 @@
       },
       "stage": [
         {
+          "approval": false,
           "target": "DEV",
-          "account": "xxxxxxxxxxxxx",
-          "approval": false
+          "account": "xxxxxxxxxxxxx"
         }
       ]
     }
