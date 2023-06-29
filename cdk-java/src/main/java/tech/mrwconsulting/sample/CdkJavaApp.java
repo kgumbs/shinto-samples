@@ -10,7 +10,7 @@ public class CdkJavaApp {
     public static void main(final String[] args) {
         App app = new App();
 
-        new CdkJavaStack(app, "CdkJavaStack", StackProps.builder()
+        new CdkJavaStack(app, "cdk-java-stack", StackProps.builder()
                 .env(Environment.builder()
                         .region(System.getenv("TARGET_REGION"))
                         .account(System.getenv("TARGET_ACCOUNT"))

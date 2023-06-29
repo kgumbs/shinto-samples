@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-pip
+  namespace: default
+spec:
+  ports:
+    - port: 80
+      targetPort: 8080
+  selector:
+    app: python-pip
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-pip
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-pip
+  template:
+    metadata:
+      labels:
+        app: python-pip
+    spec:
+      containers:
+        - image: $TARGET_REPOSITORY:$TARGET_IMAGE_TAG
+          name: python-pip
+          ports:
+            - containerPort: 8080

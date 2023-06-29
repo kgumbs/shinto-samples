@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: springboot-kotlin
+  namespace: default
+spec:
+  ports:
+    - port: 80
+      targetPort: 8080
+  selector:
+    app: springboot-kotlin
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-kotlin
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springboot-kotlin
+  template:
+    metadata:
+      labels:
+        app: springboot-kotlin
+    spec:
+      containers:
+        - image: $TARGET_REPOSITORY:$TARGET_IMAGE_TAG
+          name: springboot-kotlin
+          ports:
+            - containerPort: 8080

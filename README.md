@@ -22,7 +22,7 @@ Shinto CDK CICD Platform
 > - [Node.js Version 18.16 or greater](https://nodejs.org/en/download)
 > - [Docker Version 24.0.2 or greater](https://docs.docker.com/engine/install/)
 > - [AWS CDK Version 2.81.0 or greater](https://aws.amazon.com/getting-started/guides/setup-cdk/module-two/)
-> - Shinto Access Token (email: mark@mrwconsulting)
+> - Shinto Access Token (email: mark@mrwconsulting.tech)
 
 [Verify prerequisites](https://github.com/mrwconsulting/shinto-samples/assets/82276384/e28a80f7-a7ad-4dcf-ade1-b2edc47ed68c)
 
@@ -43,7 +43,7 @@ Shinto CDK CICD Platform
 6. Install Shinto Platform
    ```
     > cd shinto-samples/extras
-    > [update install.json  with you account specfic information]
+    > [update install.json with you account specific information]
     > shinto-manager install --profile shinto-manager
     
    ```
@@ -85,4 +85,3 @@ Shinto CDK CICD Platform
 [Sample Application Configuration Overview](https://github.com/mrwconsulting/shinto-samples/assets/82276384/b274c79f-5ddc-4c85-8435-a95bca77904e)
 
 [Sample Application Pipeline Overview](https://github.com/mrwconsulting/shinto-samples/assets/82276384/dd724622-3476-4cc8-9912-d8de5275394a)
-
