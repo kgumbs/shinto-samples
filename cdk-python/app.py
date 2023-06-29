@@ -35,7 +35,7 @@ class CdkPythonStack(Stack):
 app = App()
 default_region=os.getenv('AWS_REGION')
 default_account=os.getenv('AWS_ACCOUNT')
-CdkPythonStack(app, "CdkPythonStack",
+CdkPythonStack(app, "cdk-python-stack",
     env=Environment(region=os.getenv('TARGET_REGION',default_region),account=os.getenv('TARGET_ACCOUNT',default_account)),
 )
 app.synth()
