@@ -31,7 +31,7 @@
     },
     "deploy": {
       "type": "MANIFEST",
-      "enabled": true,
+      "enabled": false,
       "global": {
         "region": ["us-west-1"],
         "approval": true,
@@ -40,7 +40,7 @@
       "stage": [
         {
           "target": "DEV",
-          "account": "xxxxxxxxxxxxxx",
+          "account": "xxxxxxxxxxxxx",
           "approval": false
         }
       ]

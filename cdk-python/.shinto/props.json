@@ -3,7 +3,8 @@
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "cdk-python",
       "COMPUTE_TYPE": "SMALL",
-      "REMOVAL_POLICY": "DESTROY"
+      "REMOVAL_POLICY": "DESTROY",
+      "UNITTEST_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",
@@ -30,7 +31,7 @@
       "stage" : [
         {
           "target": "DEV",
-          "account": "520166433495",
+          "account": "xxxxxxxxxxxxx",
           "approval": false
         }
       ]
