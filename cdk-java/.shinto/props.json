@@ -25,8 +25,8 @@
       "type": "CDK",
       "enabled": true,
       "global": {
-        "region": ["us-east-1"],
-        "approval": true
+        "approval": true,
+        "region": ["us-east-1"]
       },
       "stage" : [
         {
