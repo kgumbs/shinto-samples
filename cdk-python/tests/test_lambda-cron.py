@@ -2,10 +2,10 @@ import pytest
 
 from aws_cdk import App, Stack
 from aws_cdk.assertions import Capture, Match, Template
-from app import LambdaCronStack
+from app import CdkPythonStack
 
 app = App()
-stack = LambdaCronStack(app, "LambdaCronExample")
+stack = CdkPythonStack(app, "cdk-python-stack")
 template = Template.from_stack(stack)
 
 class TestLambda:
