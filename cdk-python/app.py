@@ -33,7 +33,9 @@ class CdkPythonStack(Stack):
         rule.add_target(targets.LambdaFunction(lambdaFn))
 
 app = App()
+default_region=os.getenv('AWS_REGION')
+default_account=os.getenv('AWS_ACCOUNT')
 CdkPythonStack(app, "CdkPythonStack",
-    env=Environment(region=os.getenv('TARGET_REGION',account=os.getenv('TARGET_ACCOUNT'))),
+    env=Environment(region=os.getenv('TARGET_REGION',default_region),account=os.getenv('TARGET_ACCOUNT',default_account)),
 )
 app.synth()
