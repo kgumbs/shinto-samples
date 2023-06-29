@@ -48,7 +48,7 @@ Shinto CDK CICD Platform
     
    ```
 7. Enter Shinto Access Token received from (email: mark@mrwconsulting). Follow the prompts
-![install prompts](doc/install-with-token.png)
+![install prompts](install-with-token.jpg)
 
 
 
