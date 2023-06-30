@@ -48,8 +48,7 @@ Shinto CDK CICD Platform
     
    ```
 7. Enter Shinto Access Token received from (email: mark@mrwconsulting). Follow the prompts
-![install prompts](install-with-token.jpg)
-
+![install prompts](https://github.com/mrwconsulting/shinto-samples/assets/82276384/205fbfae-5d6a-498c-b949-29fc3ca6f979)
 
 
 **Shinto Framework** is an accelerator for DevOps teams for CDK-based pipelines. CICD Pipeline is the reference implementation for self-service AWS CodePipeline. Development teams submit a property file to the service to register a CDK pipeline. This will kick off the creation of the pipeline. In addition, pipeline will self-configure (mutate) based on different values and attributes set within a property file.
