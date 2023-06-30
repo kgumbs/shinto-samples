@@ -32,5 +32,21 @@
       "env": {
         "IMAGESCAN_FINDINGS_DISABLED": "true"
       }
+    },
+    "deploy": {
+      "type": "MANIFEST",
+      "enabled": false,
+      "global": {
+        "region": ["us-west-1"],
+        "approval": true,
+        "clusterName": "shinto"
+      },
+      "stage": [
+        {
+          "approval": false,
+          "target": "DEV",
+          "account": "xxxxxxxxxxxxx"
+        }
+      ]
     }
 }

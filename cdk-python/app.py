@@ -6,7 +6,7 @@ from aws_cdk import (
     App, Duration, Environment, Stack
 )
 
-class LambdaCronStack(Stack):
+class CdkPythonStack(Stack):
     def __init__(self, app: App, id: str, **kwargs) -> None:
         super().__init__(app, id, **kwargs)
 
@@ -33,7 +33,9 @@ class LambdaCronStack(Stack):
         rule.add_target(targets.LambdaFunction(lambdaFn))
 
 app = App()
-LambdaCronStack(app, "LambdaCronExample",
-    env=Environment(region=os.getenv('TARGET_REGION',account=os.getenv('TARGET_ACCOUNT'))),
+default_region=os.getenv('AWS_REGION')
+default_account=os.getenv('AWS_ACCOUNT')
+CdkPythonStack(app, "cdk-python-stack",
+    env=Environment(region=os.getenv('TARGET_REGION',default_region),account=os.getenv('TARGET_ACCOUNT',default_account)),
 )
 app.synth()

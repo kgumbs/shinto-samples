@@ -13,7 +13,7 @@ public class CdkJavaStack extends Stack {
 
     public CdkJavaStack(final Construct scope, final String id, final StackProps props) {
         super(scope, id, props);
-        final Queue queue = Queue.Builder.create(this, "CdkJavaQueue")
+        final Queue queue = Queue.Builder.create(this, "Queue")
             .visibilityTimeout(Duration.seconds(300))
             .build();
     }

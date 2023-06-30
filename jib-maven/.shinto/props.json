@@ -11,10 +11,10 @@
       "project": "jib-maven"
     },
     "codestar": {
-      "id": "e196c5a3-4efd-4f35-98fe-16b3f6f65e6b",
+      "id": "29d2e797-b54f-43c0-99b4-be4b9f3d7f32",
       "owner": "mrwconsulting",
       "branch": "main",
-      "repository": "shinto-samples"
+      "repository": "shinto-demo"
     },
     "buildSpec": {
       "type": "JAVA",
@@ -28,5 +28,21 @@
       "env" : {
         "IMAGESCAN_FINDINGS_DISABLED": "true"
       }
+    },
+    "deploy": {
+      "type": "MANIFEST",
+      "enabled": false,
+      "global": {
+        "region": ["us-west-1"],
+        "approval": true,
+        "clusterName": "shinto"
+      },
+      "stage": [
+        {
+          "approval": false,
+          "target": "DEV",
+          "account": "xxxxxxxxxxxxx"
+        }
+      ]
     }
 }

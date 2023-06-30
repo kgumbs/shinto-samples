@@ -3,17 +3,18 @@
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "cdk-python",
       "COMPUTE_TYPE": "SMALL",
-      "REMOVAL_POLICY": "DESTROY"
+      "REMOVAL_POLICY": "DESTROY",
+      "UNITTEST_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",
       "project": "cdk-python"
     },
     "codestar": {
-      "id": "e196c5a3-4efd-4f35-98fe-16b3f6f65e6b",
+      "id": "29d2e797-b54f-43c0-99b4-be4b9f3d7f32",
       "owner": "mrwconsulting",
       "branch": "main",
-      "repository": "shinto-samples"
+      "repository": "shinto-demo"
     },
     "buildSpec": {
       "type": "PYTHON",
@@ -22,15 +23,16 @@
     },
     "deploy":{
       "type": "CDK",
-      "enabled": false,
+      "enabled": true,
       "global": {
         "region": ["us-east-1"],
         "approval": true
       },
       "stage" : [
         {
+          "approval": false,
           "target": "DEV",
-          "account": "xxxxxxxxxxxx"
+          "account": "xxxxxxxxxxxxx"
         }
       ]
     }

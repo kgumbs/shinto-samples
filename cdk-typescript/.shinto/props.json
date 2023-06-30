@@ -5,7 +5,8 @@
       "ARTIFACT_OUTPUT": "false",
       "ARTIFACT_OUTPUT_DESTINATION": "build",
       "COMPUTE_TYPE": "SMALL",
-      "REMOVAL_POLICY": "DESTROY"
+      "REMOVAL_POLICY": "DESTROY",
+      "UNITTEST_ENABLED": "false"
     },
     "label": {
       "customer": "cayi",
@@ -31,8 +32,13 @@
       },
       "stage" : [
         {
+          "approval": false,
           "target": "DEV",
+<<<<<<< HEAD
           "account": "340717391351"
+=======
+          "account": "xxxxxxxxxxxxx"
+>>>>>>> 164194a7c68ddaa7e6647d35787a4242cb3a296b
         }
       ]
     }
