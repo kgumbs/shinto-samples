@@ -28,8 +28,8 @@
   "imageBuilder": {
     "type": "BUILDPACK",
     "enabled": true,
-    "imageScanType": [],
-    "env": {
+    "imageScanType": ["ECR","SNYK"],
+    "env" : {
       "IMAGESCAN_FINDINGS_DISABLED": "true"
     }
   }

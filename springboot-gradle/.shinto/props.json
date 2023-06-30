@@ -29,13 +29,13 @@
       "type": "BUILDPACK",
       "enabled": true,
       "imageScanType": ["ECR","SNYK"],
-      "env": {
+      "env" : {
         "IMAGESCAN_FINDINGS_DISABLED": "true"
       }
     },
     "deploy": {
       "type": "MANIFEST",
-      "enabled": false,
+      "enabled": true,
       "global": {
         "region": ["us-west-1"],
         "approval": true,
@@ -45,7 +45,7 @@
         {
           "approval": false,
           "target": "DEV",
-          "account": "xxxxxxxxxxxxx"
+          "account": "xxxxxxxxxxxxxx"
         }
       ]
     }
