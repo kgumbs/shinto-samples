@@ -25,7 +25,6 @@
       "enabled": true,
       "imageScanType": ["ECR","SNYK"],
       "env": {
-        "IMAGESCAN_FINDINGS_DISABLED": "true",
         "BUILDPACK_PACK": "paketo-buildpacks/python"
       }
     },

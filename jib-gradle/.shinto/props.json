@@ -28,10 +28,7 @@
       "type": "JIB",
       "enabled": true,
       "imageScanType": ["ECR","SNYK"],
-      "imageName": "jib-gradle:0.0.1-SNAPSHOT",
-      "env" : {
-        "IMAGESCAN_FINDINGS_DISABLED": "true"
-      }
+      "imageName": "jib-gradle:0.0.1-SNAPSHOT"
     },
     "deploy": {
       "type": "MANIFEST",

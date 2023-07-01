@@ -25,10 +25,7 @@
     "imageBuilder": {
       "type": "BUILDPACK",
       "enabled": true,
-      "imageScanType": ["ECR","SNYK"],
-      "env": {
-        "IMAGESCAN_FINDINGS_DISABLED": "true"
-      }
+      "imageScanType": ["ECR","SNYK"]
     },
     "deploy": {
       "type": "MANIFEST",
