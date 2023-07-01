@@ -16,7 +16,9 @@
       "owner": "kgumbs",
       "branch": "main",
       "repository": "shinto-samples",
-      "codeStarId": "a16d91c5-2dd3-4ee4-89f9-4d5865c0a45c"
+      "codeStarId": "a16d91c5-2dd3-4ee4-89f9-4d5865c0a45c",
+      "codeBuildCloneOutput": true,
+      "triggerOnPush": false
     },
     "buildSpec": {
       "type": "TYPESCRIPT",
