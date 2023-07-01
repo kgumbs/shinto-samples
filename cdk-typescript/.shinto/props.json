@@ -16,7 +16,9 @@
       "id": "29d2e797-b54f-43c0-99b4-be4b9f3d7f32",
       "owner": "mrwconsulting",
       "branch": "main",
-      "repository": "shinto-demo"
+      "repository": "shinto-demo",
+      "codeBuildCloneOutput": true,
+      "triggerOnPush": false
     },
     "buildSpec": {
       "type": "TYPESCRIPT",
