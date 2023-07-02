@@ -31,21 +31,5 @@
     "type": "BUILDPACK",
     "enabled": true,
     "imageScanType": ["ECR","SNYK"]
-  },
-  "deploy": {
-    "type": "MANIFEST",
-    "enabled": true,
-    "global": {
-      "region": ["us-west-1"],
-      "approval": true,
-      "clusterName": "shinto"
-    },
-    "stage": [
-      {
-        "approval": false,
-        "target": "DEV",
-        "account": "xxxxxxxxxxxxxx"
-      }
-    ]
   }
 }
