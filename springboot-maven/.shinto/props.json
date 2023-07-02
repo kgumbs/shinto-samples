@@ -11,11 +11,11 @@
     "customer": "cayi",
     "project": "springboot-maven"
   },
-  "git": {
+  "codestar": {
     "owner": "kgumbs",
     "branch": "main",
     "repository": "shinto-samples",
-    "codeStarId": "a16d91c5-2dd3-4ee4-89f9-4d5865c0a45c",
+    "id": "a16d91c5-2dd3-4ee4-89f9-4d5865c0a45c",
     "codeBuildCloneOutput": true,
     "triggerOnPush": true
   },
@@ -30,9 +30,22 @@
   "imageBuilder": {
     "type": "BUILDPACK",
     "enabled": true,
-    "imageScanType": ["ECR","SNYK"],
-    "env" : {
-      "IMAGESCAN_FINDINGS_DISABLED": "true"
-    }
+    "imageScanType": ["ECR","SNYK"]
+  },
+  "deploy": {
+    "type": "MANIFEST",
+    "enabled": true,
+    "global": {
+      "region": ["us-west-1"],
+      "approval": true,
+      "clusterName": "shinto"
+    },
+    "stage": [
+      {
+        "approval": false,
+        "target": "DEV",
+        "account": "xxxxxxxxxxxxxx"
+      }
+    ]
   }
 }
