@@ -4,9 +4,7 @@
       "PROJECT_WORKSPACE": "jib-maven",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "target",
-      "REMOVAL_POLICY": "DESTROY",
-      "CODESCAN_FINDINGS_ENABLED": "false",
-      "IMAGESCAN_FINDINGS_ENABLED": "false"
+      "REMOVAL_POLICY": "DESTROY"
     },
     "label": {
       "customer": "mrwconsulting",

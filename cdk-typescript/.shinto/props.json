@@ -5,9 +5,7 @@
       "ARTIFACT_OUTPUT": "false",
       "ARTIFACT_OUTPUT_DESTINATION": "build",
       "REMOVAL_POLICY": "DESTROY",
-      "UNITTEST_ENABLED": "false",
-      "CODESCAN_FINDINGS_ENABLED": "false",
-      "IMAGESCAN_FINDINGS_ENABLED": "false"
+      "UNITTEST_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",

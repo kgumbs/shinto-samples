@@ -3,9 +3,7 @@
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "cdk-python",
       "REMOVAL_POLICY": "DESTROY",
-      "UNITTEST_ENABLED": "false",
-      "CODESCAN_FINDINGS_ENABLED": "false",
-      "IMAGESCAN_FINDINGS_ENABLED": "false"
+      "UNITTEST_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",

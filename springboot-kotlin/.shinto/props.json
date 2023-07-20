@@ -4,9 +4,7 @@
       "PROJECT_WORKSPACE": "springboot-kotlin",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "build",
-      "REMOVAL_POLICY": "DESTROY",
-      "CODESCAN_FINDINGS_ENABLED": "false",
-      "IMAGESCAN_FINDINGS_ENABLED": "false"
+      "REMOVAL_POLICY": "DESTROY"
     },
     "label": {
       "customer": "mrwconsulting",
