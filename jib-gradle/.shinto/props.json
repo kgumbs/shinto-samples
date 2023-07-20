@@ -4,17 +4,18 @@
       "PROJECT_WORKSPACE": "jib-gradle",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "build",
-      "REMOVAL_POLICY": "DESTROY"
+      "REMOVAL_POLICY": "DESTROY",
+      "CODESCAN_REPORTING_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",
       "project": "jib-gradle"
     },
     "codestar": {
-      "id": "29d2e797-b54f-43c0-99b4-be4b9f3d7f32",
+      "id": "xxxxxxxxxxxxxxxxxxxxxxx",
       "owner": "mrwconsulting",
       "branch": "main",
-      "repository": "shinto-demo",
+      "repository": "shinto-samples",
       "codeBuildCloneOutput": true,
       "triggerOnPush": false
     },
@@ -34,7 +35,7 @@
     },
     "deploy": {
       "type": "MANIFEST",
-      "enabled": true,
+      "enabled": false,
       "global": {
         "region": ["us-west-1"],
         "approval": true,

@@ -5,24 +5,25 @@
     "ARTIFACT_OUTPUT": "true",
     "ARTIFACT_OUTPUT_DESTINATION": "target",
     "COMPUTE_TYPE": "SMALL",
-    "REMOVAL_POLICY": "DESTROY"
+    "REMOVAL_POLICY": "DESTROY",
+    "CODESCAN_REPORTING_ENABLED": "false"
   },
   "label": {
     "customer": "mrwconsulting",
     "project": "springboot-maven"
   },
   "codestar": {
-    "id": "29d2e797-b54f-43c0-99b4-be4b9f3d7f32",
+    "id": "xxxxxxxxxxxxxxxxxxxxxxx",
     "owner": "mrwconsulting",
     "branch": "main",
-    "repository": "shinto-demo",
+    "repository": "shinto-samples",
     "codeBuildCloneOutput": true,
     "triggerOnPush": false
   },
   "buildSpec": {
     "type": "JAVA",
     "packageManager": "MAVEN",
-    "codeScanType": ["CODACY"],
+    "codeScanType": ["SNYK","CODACY"],
     "env": {
       "PACKAGE_WRAPPER_ENABLED": "true"
     }
@@ -34,9 +35,9 @@
   },
   "deploy": {
     "type": "MANIFEST",
-    "enabled": true,
+    "enabled": false,
     "global": {
-      "region": ["us-west-1"],
+      "region": ["us-east-1"],
       "approval": true,
       "clusterName": "shinto"
     },

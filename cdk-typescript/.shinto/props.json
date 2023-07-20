@@ -6,17 +6,18 @@
       "ARTIFACT_OUTPUT_DESTINATION": "build",
       "COMPUTE_TYPE": "SMALL",
       "REMOVAL_POLICY": "DESTROY",
-      "UNITTEST_ENABLED": "false"
+      "UNITTEST_ENABLED": "false",
+      "CODESCAN_REPORTING_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",
       "project": "cdk-typescript"
     },
     "codestar": {
-      "id": "29d2e797-b54f-43c0-99b4-be4b9f3d7f32",
+      "id": "xxxxxxxxxxxxxxxxxxxxxxx",
       "owner": "mrwconsulting",
       "branch": "main",
-      "repository": "shinto-demo",
+      "repository": "shinto-samples",
       "codeBuildCloneOutput": true,
       "triggerOnPush": false
     },
