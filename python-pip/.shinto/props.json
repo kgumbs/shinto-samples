@@ -5,7 +5,7 @@
       "BUILDPACK_BUILDER": "paketobuildpacks/builder:base",
       "REMOVAL_POLICY": "DESTROY",
       "CODESCAN_REPORTING_ENABLED": "false",
-      "IMAGE_REPORTING_ENABLED": "false"
+      "IMAGESCAN_REPORTING_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",
