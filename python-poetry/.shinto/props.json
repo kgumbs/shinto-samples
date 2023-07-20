@@ -4,7 +4,8 @@
       "PROJECT_WORKSPACE": "python-poetry",
       "BUILDPACK_BUILDER": "paketobuildpacks/builder:base",
       "REMOVAL_POLICY": "DESTROY",
-      "CODESCAN_REPORTING_ENABLED": "false"
+      "CODESCAN_REPORTING_ENABLED": "false",
+      "IMAGE_REPORTING_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",

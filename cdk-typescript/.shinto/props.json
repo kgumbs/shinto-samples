@@ -4,10 +4,10 @@
       "PROJECT_WORKSPACE": "cdk-typescript",
       "ARTIFACT_OUTPUT": "false",
       "ARTIFACT_OUTPUT_DESTINATION": "build",
-      "COMPUTE_TYPE": "SMALL",
       "REMOVAL_POLICY": "DESTROY",
       "UNITTEST_ENABLED": "false",
-      "CODESCAN_REPORTING_ENABLED": "false"
+      "CODESCAN_REPORTING_ENABLED": "false",
+      "IMAGE_REPORTING_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",

@@ -4,9 +4,9 @@
       "PROJECT_WORKSPACE": "springboot-gradle",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "build",
-      "COMPUTE_TYPE": "SMALL",
       "REMOVAL_POLICY": "DESTROY",
-      "CODESCAN_REPORTING_ENABLED": "false"
+      "CODESCAN_REPORTING_ENABLED": "false",
+      "IMAGE_REPORTING_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",

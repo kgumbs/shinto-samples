@@ -2,10 +2,10 @@
     "metadata": {
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "cdk-java",
-      "COMPUTE_TYPE": "SMALL",
       "REMOVAL_POLICY": "DESTROY",
       "UNITTEST_ENABLED": "false",
-      "CODESCAN_REPORTING_ENABLED": "false"
+      "CODESCAN_REPORTING_ENABLED": "false",
+      "IMAGE_REPORTING_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",
