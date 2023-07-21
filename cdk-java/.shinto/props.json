@@ -3,7 +3,8 @@
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "cdk-java",
       "REMOVAL_POLICY": "DESTROY",
-      "UNITTEST_ENABLED": "false"
+      "UNITTEST_ENABLED": "false",
+      "PLUGGABLE_BETA": "true"
     },
     "label": {
       "customer": "mrwconsulting",
