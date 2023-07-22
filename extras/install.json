@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "vpcId": "vpc-0c59ecc59e672c454",
-=======
-  "vpcId": "vpc-061bbf824621999ee",
->>>>>>> 02402b3c840f5bf9d9105ef26dc37126492d1002
   "subnetType": "Private",
   "computeType": "BUILD_GENERAL1_SMALL",
   "image": {
