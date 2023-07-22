@@ -4,7 +4,6 @@
       "PROJECT_WORKSPACE": "springboot-gradle",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "build",
-      "COMPUTE_TYPE": "SMALL",
       "REMOVAL_POLICY": "DESTROY"
     },
     "label": {
@@ -34,7 +33,7 @@
     },
     "deploy": {
       "type": "MANIFEST",
-      "enabled": true,
+      "enabled": false,
       "global": {
         "region": ["us-west-1"],
         "approval": true,

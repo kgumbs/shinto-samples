@@ -4,7 +4,6 @@
       "PROJECT_WORKSPACE": "springboot-kotlin",
       "ARTIFACT_OUTPUT": "true",
       "ARTIFACT_OUTPUT_DESTINATION": "build",
-      "COMPUTE_TYPE": "SMALL",
       "REMOVAL_POLICY": "DESTROY"
     },
     "label": {
@@ -22,7 +21,10 @@
     "buildSpec": {
       "type": "JAVA",
       "packageManager": "GRADLE",
-      "codeScanType": ["CODACY","SNYK"]
+      "codeScanType": ["CODACY","SNYK"],
+      "env" : {
+        "PACKAGE_WRAPPER_ENABLED": "true"
+      }
     },
     "imageBuilder": {
       "type": "BUILDPACK",

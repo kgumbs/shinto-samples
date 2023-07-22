@@ -2,19 +2,19 @@
     "metadata": {
       "DEBUG": "false",
       "PROJECT_WORKSPACE": "cdk-java",
-      "COMPUTE_TYPE": "SMALL",
       "REMOVAL_POLICY": "DESTROY",
-      "UNITTEST_ENABLED": "false"
+      "UNITTEST_ENABLED": "false",
+      "PLUGGABLE_BETA": "true"
     },
     "label": {
       "customer": "mrwconsulting",
       "project": "cdk-java"
     },
     "codestar": {
-      "id": "29d2e797-b54f-43c0-99b4-be4b9f3d7f32",
+      "id": "xxxxxxxxxxxxxxxxxxxxxxx",
       "owner": "mrwconsulting",
       "branch": "main",
-      "repository": "shinto-demo",
+      "repository": "shinto-samples",
       "codeBuildCloneOutput": true,
       "triggerOnPush": false
     },
@@ -35,7 +35,7 @@
           "approval": false,
           "target": "DEV",
           "account": "xxxxxxxxxxxxxx",
-          "region": ["us-east-1","us-west-1"]
+          "region": ["us-east-1"]
         }
       ]
     }
