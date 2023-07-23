@@ -11,12 +11,13 @@ declare -a LIST=("cdk-java" "cdk-python" "cdk-typescript" "jib-gradle" "jib-mave
 DEFAULT_DIR=$(PWD)/..
 DEFAULT_SLEEPTIME=15
 DEFAULT_PROFILE='shinto-manager'
-read -e -p  "AWS Profile: [$DEFAULT_PROFILE] " PROFILE
+read -e -p  "AWS PROFILE: [$DEFAULT_PROFILE] " PROFILE
 PROFILE="${PROFILE:-$DEFAULT_PROFILE}"
-read -e -p  "Parent directory: [$DEFAULT_DIR] " PARENT_DIR
+read -e -p  "PARENT DIRECTORY:  [$DEFAULT_DIR] " PARENT_DIR
 PARENT_DIR="${PARENT_DIR:-$DEFAULT_DIR}"
-read -e -p  "Sleep time between samples: [$DEFAULT_SLEEPTIME] " SLEEPTIME
+read -e -p  "SLEEP TIME BETWEEN SAMPLES: [$DEFAULT_SLEEPTIME] " SLEEPTIME
 SLEEPTIME="${SLEEPTIME:-$DEFAULT_SLEEPTIME}"
+
 for INDEX in "${LIST[@]}"; do
     echo "unregistering ${INDEX} sample....."
     shinto-manager unregister $PARENT_DIR/$INDEX/.shinto/props.json --profile $PROFILE
