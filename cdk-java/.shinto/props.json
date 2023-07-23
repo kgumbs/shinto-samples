@@ -4,7 +4,9 @@
       "PROJECT_WORKSPACE": "cdk-java",
       "REMOVAL_POLICY": "DESTROY",
       "UNITTEST_ENABLED": "false",
-      "PLUGGABLE_BETA": "true"
+      "PLUGGABLE_BETA": "true",
+      "CODESCAN_FINDINGS_ENABLED": "false",
+      "IMAGESCAN_FINDINGS_ENABLED": "false"
     },
     "label": {
       "customer": "mrwconsulting",
