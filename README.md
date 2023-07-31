@@ -21,7 +21,7 @@ Shinto CDK CICD Platform
 > - [AWS CLI Version 2.11.6 or greater](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 > - [Node.js Version 18.16 or greater](https://nodejs.org/en/download)
 > - [Docker Version 24.0.2 or greater](https://docs.docker.com/engine/install/)
-> - [AWS CDK Version 2.81.0 or greater](https://aws.amazon.com/getting-started/guides/setup-cdk/module-two/)
+> - [AWS CDK Version 2.89.0 or greater](https://aws.amazon.com/getting-started/guides/setup-cdk/module-two/)
 > - Shinto Access Token (email: mark@mrwconsulting.tech)
 
 [Verify prerequisites](https://github.com/mrwconsulting/shinto-samples/assets/82276384/e28a80f7-a7ad-4dcf-ade1-b2edc47ed68c)
