@@ -1,42 +1,42 @@
 {
-    "metadata": {
-      "DEBUG": "false",
-      "PROJECT_WORKSPACE": "cdk-python",
-      "REMOVAL_POLICY": "DESTROY",
-      "UNITTEST_ENABLED": "false",
-      "CODESCAN_FINDINGS_ENABLED": "false",
-      "IMAGESCAN_FINDINGS_ENABLED": "false"
+  "metadata": {
+    "DEBUG": "false",
+    "PROJECT_WORKSPACE": "cdk-python",
+    "REMOVAL_POLICY": "DESTROY",
+    "UNITTEST_ENABLED": "false",
+    "CODESCAN_FINDINGS_ENABLED": "true",
+    "IMAGESCAN_FINDINGS_ENABLED": "true"
+  },
+  "label": {
+    "customer": "mrwconsulting",
+    "project": "cdk-python"
+  },
+  "codestar": {
+    "id": "xxxxxxxxxxxxxxxxxxxx",
+    "owner": "mrwconsulting",
+    "branch": "main",
+    "repository": "shinto-demo",
+    "codeBuildCloneOutput": true,
+    "triggerOnPush": false
+  },
+  "buildSpec": {
+    "type": "PYTHON",
+    "packageManager": "PIP",
+    "codeScanType": ["CODACY","SNYK","TRIVY"]
+  },
+  "deploy":{
+    "type": "CDK",
+    "enabled": true,
+    "global": {
+      "region": ["us-east-1"],
+      "approval": true
     },
-    "label": {
-      "customer": "mrwconsulting",
-      "project": "cdk-python"
-    },
-    "codestar": {
-      "id": "xxxxxxxxxxxxxxxxxxxxxxx",
-      "owner": "mrwconsulting",
-      "branch": "main",
-      "repository": "shinto-samples",
-      "codeBuildCloneOutput": true,
-      "triggerOnPush": false
-    },
-    "buildSpec": {
-      "type": "PYTHON",
-      "packageManager": "PIP",
-      "codeScanType": ["CODACY","SNYK"]
-    },
-    "deploy":{
-      "type": "CDK",
-      "enabled": true,
-      "global": {
-        "region": ["us-east-1"],
-        "approval": true
-      },
-      "stage" : [
-        {
-          "approval": false,
-          "target": "DEV",
-          "account": "xxxxxxxxxxxxxx"
-        }
-      ]
-    }
+    "stage" : [
+      {
+        "approval": false,
+        "target": "DEV",
+        "account": "xxxxxxxxxxxxxx"
+      }
+    ]
+  }
 }

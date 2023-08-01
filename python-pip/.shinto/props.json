@@ -1,51 +1,51 @@
 {
-    "metadata": {
-      "DEBUG": "false",
-      "PROJECT_WORKSPACE": "python-pip",
-      "BUILDPACK_BUILDER": "paketobuildpacks/builder:base",
-      "REMOVAL_POLICY": "DESTROY",
-      "CODESCAN_FINDINGS_ENABLED": "false",
-      "IMAGESCAN_FINDINGS_ENABLED": "false"
-    },
-    "label": {
-      "customer": "mrwconsulting",
-      "project": "python-pip"
-    },
-    "codestar": {
-      "id": "xxxxxxxxxxxxxxxxxxxxxxx",
-      "owner": "mrwconsulting",
-      "branch": "main",
-      "repository": "shinto-samples",
-      "codeBuildCloneOutput": true,
-      "triggerOnPush": false
-    },
-    "buildSpec": {
-      "type": "PYTHON",
-      "packageManager": "PIP",
-      "codeScanType": ["CODACY","SNYK"]
-    },
-    "imageBuilder": {
-      "type": "BUILDPACK",
-      "enabled": true,
-      "imageScanType": ["ECR","SNYK"],
-      "env": {
-        "BUILDPACK_PACK": "paketo-buildpacks/python"
-      }
-    },
-    "deploy": {
-      "type": "MANIFEST",
-      "enabled": false,
-      "global": {
-        "region": ["us-west-1"],
-        "approval": true,
-        "clusterName": "shinto"
-      },
-      "stage": [
-        {
-          "approval": false,
-          "target": "DEV",
-          "account": "xxxxxxxxxxxxxx"
-        }
-      ]
+  "metadata": {
+    "DEBUG": "false",
+    "PROJECT_WORKSPACE": "python-pip",
+    "BUILDPACK_BUILDER": "paketobuildpacks/builder:base",
+    "REMOVAL_POLICY": "DESTROY",
+    "CODESCAN_FINDINGS_ENABLED": "true",
+    "IMAGESCAN_FINDINGS_ENABLED": "true"
+  },
+  "label": {
+    "customer": "mrwconsulting",
+    "project": "python-pip"
+  },
+  "codestar": {
+    "id": "xxxxxxxxxxxxxxxxxxxx",
+    "owner": "mrwconsulting",
+    "branch": "main",
+    "repository": "shinto-demo",
+    "codeBuildCloneOutput": true,
+    "triggerOnPush": false
+  },
+  "buildSpec": {
+    "type": "PYTHON",
+    "packageManager": "PIP",
+    "codeScanType": ["CODACY","SNYK","TRIVY"]
+  },
+  "imageSpec": {
+    "type": "BUILDPACK",
+    "enabled": true,
+    "imageScanType": ["ECR","SNYK","TRIVY"],
+    "env": {
+      "BUILDPACK_PACK": "paketo-buildpacks/python"
     }
+  },
+  "deploy": {
+    "type": "MANIFEST",
+    "enabled": false,
+    "global": {
+      "region": ["us-west-1"],
+      "approval": true,
+      "clusterName": "shinto"
+    },
+    "stage": [
+      {
+        "approval": false,
+        "target": "DEV",
+        "account": "xxxxxxxxxxxxxx"
+      }
+    ]
+  }
 }

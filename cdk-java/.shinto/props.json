@@ -1,44 +1,44 @@
 {
-    "metadata": {
-      "DEBUG": "false",
-      "PROJECT_WORKSPACE": "cdk-java",
-      "REMOVAL_POLICY": "DESTROY",
-      "UNITTEST_ENABLED": "false",
-      "PLUGGABLE_BETA": "true",
-      "CODESCAN_FINDINGS_ENABLED": "false",
-      "IMAGESCAN_FINDINGS_ENABLED": "false"
+  "metadata": {
+    "DEBUG": "false",
+    "PROJECT_WORKSPACE": "cdk-java",
+    "REMOVAL_POLICY": "DESTROY",
+    "ARTIFACT_OUTPUT": "true",
+    "UNITTEST_ENABLED": "false",
+    "CODESCAN_FINDINGS_ENABLED": "true",
+    "IMAGESCAN_FINDINGS_ENABLED": "true"
+  },
+  "label": {
+    "customer": "mrwconsulting",
+    "project": "cdk-java"
+  },
+  "codestar": {
+    "id": "xxxxxxxxxxxxxxxxxxxx",
+    "owner": "mrwconsulting",
+    "branch": "main",
+    "repository": "shinto-demo",
+    "codeBuildCloneOutput": true,
+    "triggerOnPush": false
+  },
+  "buildSpec": {
+    "type": "JAVA",
+    "packageManager": "MAVEN",
+    "codeScanType": ["CODACY","SNYK","TRIVY"]
+  },
+  "deploy":{
+    "type": "CDK",
+    "enabled": true,
+    "global": {
+      "approval": true,
+      "region": ["us-east-1"]
     },
-    "label": {
-      "customer": "mrwconsulting",
-      "project": "cdk-java"
-    },
-    "codestar": {
-      "id": "xxxxxxxxxxxxxxxxxxxxxxx",
-      "owner": "mrwconsulting",
-      "branch": "main",
-      "repository": "shinto-samples",
-      "codeBuildCloneOutput": true,
-      "triggerOnPush": false
-    },
-    "buildSpec": {
-      "type": "JAVA",
-      "packageManager": "MAVEN",
-      "codeScanType": ["CODACY","SNYK"]
-    },
-    "deploy":{
-      "type": "CDK",
-      "enabled": true,
-      "global": {
-        "approval": true,
+    "stage" : [
+      {
+        "approval": false,
+        "target": "DEV",
+        "account": "xxxxxxxxxxxxxx",
         "region": ["us-east-1"]
-      },
-      "stage" : [
-        {
-          "approval": false,
-          "target": "DEV",
-          "account": "xxxxxxxxxxxxxx",
-          "region": ["us-east-1"]
-        }
-      ]
-    }
+      }
+    ]
+  }
 }

@@ -1,52 +1,52 @@
 {
-    "metadata": {
-      "DEBUG": "false",
-      "PROJECT_WORKSPACE": "springboot-kotlin",
-      "ARTIFACT_OUTPUT": "true",
-      "ARTIFACT_OUTPUT_DESTINATION": "build",
-      "REMOVAL_POLICY": "DESTROY",
-      "CODESCAN_FINDINGS_ENABLED": "false",
-      "IMAGESCAN_FINDINGS_ENABLED": "false"
-    },
-    "label": {
-      "customer": "mrwconsulting",
-      "project": "springboot-kotlin"
-    },
-    "codestar": {
-      "id": "xxxxxxxxxxxxxxxxxxxxxxx",
-      "owner": "mrwconsulting",
-      "branch": "main",
-      "repository": "shinto-samples",
-      "codeBuildCloneOutput": true,
-      "triggerOnPush": false
-    },
-    "buildSpec": {
-      "type": "JAVA",
-      "packageManager": "GRADLE",
-      "codeScanType": ["CODACY","SNYK"],
-      "env" : {
-        "PACKAGE_WRAPPER_ENABLED": "true"
-      }
-    },
-    "imageBuilder": {
-      "type": "BUILDPACK",
-      "enabled": true,
-      "imageScanType": ["ECR","SNYK"]
-    },
-    "deploy": {
-      "type": "MANIFEST",
-      "enabled": false,
-      "global": {
-        "region": ["us-west-1"],
-        "approval": true,
-        "clusterName": "shinto"
-      },
-      "stage": [
-        {
-          "approval": false,
-          "target": "DEV",
-          "account": "xxxxxxxxxxxxxx"
-        }
-      ]
+  "metadata": {
+    "DEBUG": "false",
+    "PROJECT_WORKSPACE": "springboot-kotlin",
+    "ARTIFACT_OUTPUT": "true",
+    "ARTIFACT_OUTPUT_DESTINATION": "build",
+    "REMOVAL_POLICY": "DESTROY",
+    "CODESCAN_FINDINGS_ENABLED": "true",
+    "IMAGESCAN_FINDINGS_ENABLED": "true"
+  },
+  "label": {
+    "customer": "mrwconsulting",
+    "project": "springboot-kotlin"
+  },
+  "codestar": {
+    "id": "xxxxxxxxxxxxxxxxxxxx",
+    "owner": "mrwconsulting",
+    "branch": "main",
+    "repository": "shinto-demo",
+    "codeBuildCloneOutput": true,
+    "triggerOnPush": false
+  },
+  "buildSpec": {
+    "type": "JAVA",
+    "packageManager": "GRADLE",
+    "codeScanType": ["CODACY","SNYK","TRIVY"],
+    "env" : {
+      "PACKAGE_WRAPPER_ENABLED": "true"
     }
+  },
+  "imageSpec": {
+    "type": "BUILDPACK",
+    "enabled": true,
+    "imageScanType": ["ECR","SNYK","TRIVY"]
+  },
+  "deploy": {
+    "type": "MANIFEST",
+    "enabled": false,
+    "global": {
+      "region": ["us-west-1"],
+      "approval": true,
+      "clusterName": "shinto"
+    },
+    "stage": [
+      {
+        "approval": false,
+        "target": "DEV",
+        "account": "xxxxxxxxxxxxxx"
+      }
+    ]
+  }
 }

@@ -1,37 +1,37 @@
 {
   "metadata": {
-    "DEBUG": "false",
+    "DEBUG": "true",
     "PROJECT_WORKSPACE": "springboot-maven",
     "ARTIFACT_OUTPUT": "true",
     "ARTIFACT_OUTPUT_DESTINATION": "target",
     "REMOVAL_POLICY": "DESTROY",
-    "CODESCAN_FINDINGS_ENABLED": "false",
-    "IMAGESCAN_FINDINGS_ENABLED": "false"
+    "CODESCAN_FINDINGS_ENABLED": "true",
+    "IMAGESCAN_FINDINGS_ENABLED": "true"
   },
   "label": {
     "customer": "mrwconsulting",
     "project": "springboot-maven"
   },
   "codestar": {
-    "id": "xxxxxxxxxxxxxxxxxxxxxxx",
+    "id": "xxxxxxxxxxxxxxxxxxxx",
     "owner": "mrwconsulting",
     "branch": "main",
-    "repository": "shinto-samples",
+    "repository": "shinto-demo",
     "codeBuildCloneOutput": true,
     "triggerOnPush": false
   },
   "buildSpec": {
     "type": "JAVA",
     "packageManager": "MAVEN",
-    "codeScanType": ["SNYK","CODACY"],
+    "codeScanType": ["CODACY","SNYK","TRIVY"],
     "env": {
       "PACKAGE_WRAPPER_ENABLED": "true"
     }
   },
-  "imageBuilder": {
+  "imageSpec": {
     "type": "BUILDPACK",
     "enabled": true,
-    "imageScanType": ["ECR","SNYK"]
+    "imageScanType": ["ECR","SNYK","TRIVY"]
   },
   "deploy": {
     "type": "MANIFEST",
