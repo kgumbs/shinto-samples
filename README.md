@@ -62,8 +62,9 @@ Shinto CDK CICD Platform
 - Remove dead code.
 
 > CDK CICD Pipeline supports following quality gates:
->> - [Codacy](https:www.codacy.com)
+>> - [Codacy](https:www.codacy.co)
 >> - [Snyk](https://snyk.io/)
+>> - [Trivy](https://trivy.dev/)
 
 >>*Shinto Framework can easily be updated to support other vendor implementations*
 
@@ -78,6 +79,11 @@ Shinto CDK CICD Platform
 > CDK CICD Pipeline supports following docker image building technologies: 
 >> - [Cloud Native Buildpacks](https://buildpacks.io/)
 >> - [Google JiB](https://cloud.google.com/java/getting-started/jib)
+
+> Imaging supports following image scanning technologies:
+>> - [AWS ECR Imaging](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html)
+>> - [Snyk](https://snyk.io/)
+>> - [Trivy](https://trivy.dev/)
 
 >>*Shinto Framework can easily be updated to support other vendor implementations*
 
