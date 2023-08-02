@@ -22,28 +22,11 @@
       "packageManager": "PIP",
       "codeScanType": ["CODACY","SNYK"]
     },
-    "imageBuilder": {
-      "type": "BUILDPACK",
-      "enabled": true,
-      "imageScanType": ["ECR","SNYK"],
-      "env": {
-        "BUILDPACK_PACK": "paketo-buildpacks/python"
+    "stage": [
+      {
+        "approval": false,
+        "target": "DEV",
+        "account": "xxxxxxxxxxxxxx"
       }
-    },
-    "deploy": {
-      "type": "MANIFEST",
-      "enabled": false,
-      "global": {
-        "region": ["us-west-1"],
-        "approval": true,
-        "clusterName": "shinto"
-      },
-      "stage": [
-        {
-          "approval": false,
-          "target": "DEV",
-          "account": "xxxxxxxxxxxxxx"
-        }
-      ]
-    }
+    ]
 }

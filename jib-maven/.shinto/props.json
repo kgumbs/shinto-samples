@@ -1,47 +1,49 @@
 {
-    "metadata": {
-      "DEBUG": "false",
-      "PROJECT_WORKSPACE": "jib-maven",
-      "ARTIFACT_OUTPUT": "true",
-      "ARTIFACT_OUTPUT_DESTINATION": "target",
-      "REMOVAL_POLICY": "DESTROY"
+  "metadata": {
+    "DEBUG": "false",
+    "PROJECT_WORKSPACE": "jib-maven",
+    "ARTIFACT_OUTPUT": "true",
+    "ARTIFACT_OUTPUT_DESTINATION": "target",
+    "REMOVAL_POLICY": "DESTROY",
+    "CODESCAN_FINDINGS_ENABLED": "true",
+    "IMAGESCAN_FINDINGS_ENABLED": "true"
+  },
+  "label": {
+    "customer": "mrwconsulting",
+    "project": "jib-maven"
+  },
+  "codestar": {
+    "id": "xxxxxxxxxxxxxxxxxxxx",
+    "owner": "mrwconsulting",
+    "branch": "main",
+    "repository": "shinto-demo",
+    "codeBuildCloneOutput": true,
+    "triggerOnPush": false
+  },
+  "buildSpec": {
+    "type": "JAVA",
+    "packageManager": "MAVEN",
+    "codeScanType": ["CODACY","SNYK","TRIVY"]
+  },
+  "imageSpec": {
+    "type": "JIB",
+    "enabled": true,
+    "imageScanType": ["ECR","SNYK","TRIVY"]
+  },
+  "deploy": {
+    "type": "MANIFEST",
+    "enabled": false,
+    "global": {
+      "region": ["us-west-1"],
+      "approval": true,
+      "clusterName": "shinto"
     },
-    "label": {
-      "customer": "mrwconsulting",
-      "project": "jib-maven"
-    },
-    "codestar": {
-      "id": "xxxxxxxxxxxxxxxxxxxxxxx",
-      "owner": "mrwconsulting",
-      "branch": "main",
-      "repository": "shinto-samples",
-      "codeBuildCloneOutput": true,
-      "triggerOnPush": false
-    },
-    "buildSpec": {
-      "type": "JAVA",
-      "packageManager": "MAVEN",
-      "codeScanType": ["CODACY","SNYK"]
-    },
-    "imageBuilder": {
-      "type": "JIB",
-      "enabled": true,
-      "imageScanType": ["ECR","SNYK"]
-    },
-    "deploy": {
-      "type": "MANIFEST",
-      "enabled": false,
-      "global": {
-        "region": ["us-west-1"],
-        "approval": true,
-        "clusterName": "shinto"
-      },
-      "stage": [
-        {
-          "approval": false,
-          "target": "DEV",
-          "account": "xxxxxxxxxxxxxx"
-        }
-      ]
-    }
+    "stage": [
+      {
+        "approval": false,
+        "target": "DEV",
+        "account": "xxxxxxxxxxxxxx"
+      }
+    ]
+  }
 }

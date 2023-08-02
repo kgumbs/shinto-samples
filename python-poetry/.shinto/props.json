@@ -1,9 +1,41 @@
 {
-    "metadata": {
-      "DEBUG": "false",
-      "PROJECT_WORKSPACE": "python-poetry",
-      "BUILDPACK_BUILDER": "paketobuildpacks/builder:base",
-      "REMOVAL_POLICY": "DESTROY"
+  "metadata": {
+    "DEBUG": "false",
+    "PROJECT_WORKSPACE": "python-poetry",
+    "BUILDPACK_BUILDER": "paketobuildpacks/builder:base",
+    "REMOVAL_POLICY": "DESTROY",
+    "CODESCAN_FINDINGS_ENABLED": "true",
+    "IMAGESCAN_FINDINGS_ENABLED": "true"
+  },
+  "label": {
+    "customer": "mrwconsulting",
+    "project": "python-poetry"
+  },
+  "codestar": {
+    "id": "xxxxxxxxxxxxxxxxxxxx",
+    "owner": "mrwconsulting",
+    "branch": "main",
+    "repository": "shinto-demo",
+    "codeBuildCloneOutput": true,
+    "triggerOnPush": false
+  },
+  "buildSpec": {
+    "type": "PYTHON",
+    "packageManager": "POETRY",
+    "codeScanType": ["CODACY","SNYK","TRIVY"]
+  },
+  "imageSpec": {
+    "type": "BUILDPACK",
+    "enabled": true,
+    "imageScanType": ["ECR","SNYK","TRIVY"]
+  },
+  "deploy": {
+    "type": "MANIFEST",
+    "enabled": false,
+    "global": {
+      "region": ["us-west-1"],
+      "approval": true,
+      "clusterName": "shinto"
     },
     "label": {
       "customer": "cayi",
@@ -43,4 +75,5 @@
         }
       ]
     }
+}
 }
