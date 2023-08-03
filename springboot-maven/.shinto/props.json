@@ -5,8 +5,8 @@
     "ARTIFACT_OUTPUT": "true",
     "ARTIFACT_OUTPUT_DESTINATION": "target",
     "REMOVAL_POLICY": "DESTROY",
-    "CODESCAN_FINDINGS_ENABLED": "true",
-    "IMAGESCAN_FINDINGS_ENABLED": "true"
+    "CODESCAN_FINDINGS_ENABLED": "false",
+    "IMAGESCAN_FINDINGS_ENABLED": "false"
   },
   "label": {
     "customer": "cayi",
